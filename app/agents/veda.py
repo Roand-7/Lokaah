@@ -885,9 +885,9 @@ class VedaAgent:
                 "contents": prompt,
             }
 
-            # Add tools if provided (Phase 4: Agentic transformation)
-            if tools:
-                gen_args["tools"] = tools
+            # TODO: Tools feature disabled temporarily - requires Gemini SDK update
+            # if tools:
+            #     gen_args["tools"] = tools
 
             response = self.client.models.generate_content(**gen_args)
 
