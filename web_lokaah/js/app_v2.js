@@ -13,7 +13,7 @@ const API_BASE = (() => {
     const host = window.location.hostname;
     const protocol = window.location.protocol;
     if (protocol === 'file:' || host === 'localhost' || host === '127.0.0.1') {
-        return 'http://localhost:8000';
+        return 'http://localhost:8001';  // Updated from 8000 to 8001
     }
     return '';
 })();
@@ -23,7 +23,7 @@ const SESSION_KEY = 'lokaah_chat_session';
 // Single unified tutor persona (hides multi-agent system)
 const TUTOR_PERSONA = {
     name: 'LOKAAH',
-    avatar: '🎓',
+    avatar: 'L',
     greeting: 'Hey! I\'m your AI tutor. Ready to make learning fun?'
 };
 

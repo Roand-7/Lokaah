@@ -98,6 +98,88 @@ async def get_stats():
 
 
 # ==========================================
+# PROGRESS TRACKING & ANALYTICS
+# ==========================================
+
+class ProgressResponse(BaseModel):
+    session_id: str
+    total_questions_attempted: int
+    total_correct: int
+    accuracy: float
+    concepts_practiced: List[Dict[str, Any]]
+    weak_areas: List[str]
+    mastered_topics: List[str]
+    overall_mastery: float
+    recommendations: List[str]
+
+@router.get("/progress/{session_id}", response_model=ProgressResponse)
+async def get_progress(session_id: str):
+    """
+    Get comprehensive progress report for a student session.
+    Shows mastery scores, weak areas, and personalized recommendations.
+    """
+    try:
+        db = get_db()
+        
+        # Get all concept mastery data for this session
+        mastery_result = db.table('concept_mastery')\
+            .select('*')\
+            .eq('session_id', session_id)\
+            .execute()
+        
+        concepts = mastery_result.data if mastery_result.data else []
+        
+        # Calculate aggregate statistics
+        total_attempts = sum(c.get('attempts', 0) for c in concepts)
+        total_correct = sum(c.get('correct_attempts', 0) for c in concepts)
+        accuracy = (total_correct / total_attempts * 100) if total_attempts > 0 else 0.0
+        
+        # Identify weak areas (< 60% mastery) and mastered topics (> 85% mastery)
+        weak_areas = [c['concept'] for c in concepts if c.get('score', 0.5) < 0.6]
+        mastered_topics = [c['concept'] for c in concepts if c.get('score', 0.5) > 0.85]
+        
+        # Calculate overall mastery (weighted by attempts)
+        if concepts:
+            total_weight = sum(c.get('attempts', 0) for c in concepts)
+            weighted_mastery = sum(
+                c.get('score', 0.5) * c.get('attempts', 0) 
+                for c in concepts
+            )
+            overall_mastery = weighted_mastery / total_weight if total_weight > 0 else 0.5
+        else:
+            overall_mastery = 0.0
+        
+        # Generate recommendations
+        recommendations = []
+        if weak_areas:
+            recommendations.append(f"Focus on: {', '.join(weak_areas[:3])} - Practice 10 more questions each")
+        if mastered_topics:
+            recommendations.append(f"Great job on {', '.join(mastered_topics[:3])}! Keep that momentum going")
+        if accuracy < 70:
+            recommendations.append("Slow down and focus on understanding - accuracy is more important than speed")
+        elif accuracy > 85:
+            recommendations.append("Excellent accuracy! Ready for harder challenges?")
+        if total_attempts < 10:
+            recommendations.append("Keep practicing! Aim for at least 50 questions to see real progress")
+        
+        return ProgressResponse(
+            session_id=session_id,
+            total_questions_attempted=total_attempts,
+            total_correct=total_correct,
+            accuracy=round(accuracy, 1),
+            concepts_practiced=concepts,
+            weak_areas=weak_areas,
+            mastered_topics=mastered_topics,
+            overall_mastery=round(overall_mastery, 2),
+            recommendations=recommendations
+        )
+        
+    except Exception as e:
+        logging.getLogger(__name__).exception("Progress tracking failed: %s", e)
+        raise HTTPException(status_code=500, detail="Could not retrieve progress data")
+
+
+# ==========================================
 # SINGLE CHAT INTERFACE (LangGraph Supervisor)
 # ==========================================
 
@@ -192,6 +274,10 @@ class VedaChatRequest(BaseModel):
 class VedaChatResponse(BaseModel):
     response: str
     session_id: str
+    has_visual: bool = False
+    visual_svg: Optional[str] = None
+    formula_html: Optional[str] = None
+    formula_latex: Optional[str] = None
 
 # In-memory conversation history per session (bounded to prevent memory leaks)
 _MAX_SESSIONS = 500
@@ -234,6 +320,19 @@ async def veda_chat(request: VedaChatRequest):
         if not response_text.strip():
             response_text = "I'm having a moment — could you rephrase your question?"
 
+        # Extract visual data
+        has_visual = result.get("has_visual", False)
+        visual_svg = None
+        if has_visual and result.get("visual_data"):
+            visual_data = result["visual_data"]
+            if hasattr(visual_data, "svg"):
+                visual_svg = visual_data.svg
+            elif isinstance(visual_data, dict):
+                visual_svg = visual_data.get("svg")
+
+        formula_html = result.get("formula_html")
+        formula_latex = result.get("formula_latex")
+
         # Update conversation history
         history.append({"role": "user", "content": request.message})
         history.append({"role": "assistant", "content": response_text})
@@ -244,7 +343,11 @@ async def veda_chat(request: VedaChatRequest):
 
         return VedaChatResponse(
             response=response_text,
-            session_id=session_id
+            session_id=session_id,
+            has_visual=has_visual,
+            visual_svg=visual_svg,
+            formula_html=formula_html,
+            formula_latex=formula_latex,
         )
 
     except Exception as e:

@@ -103,9 +103,10 @@ class PulseAgent:
                 "contents": prompt,
             }
 
-            # Add tools if provided
-            if tools:
-                gen_args["tools"] = tools
+            # Tools parameter disabled - causes TypeError with current Gemini client version
+            # Will be re-enabled when Gemini SDK supports function calling via this param
+            # if tools:
+            #     gen_args["tools"] = tools
 
             response = self.client.models.generate_content(**gen_args)
 

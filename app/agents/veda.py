@@ -408,45 +408,56 @@ class VedaAgent:
             )
 
         return (
-            "You are VEDA, an elite AI tutor for board exams.\n\n"
+            "You are VEDA, a friendly AI math tutor for Indian Class 10 students (age 14-16).\n\n"
             f"CURRENT STATE: {context.current_state.value.upper()}\n"
             f"TOPIC: {topic or 'General'}\n"
             f"STUDENT MASTERY: {json.dumps(context.concept_mastery, indent=2)}\n\n"
-            "CORE PRINCIPLE:\n"
-            "Be CONVERSATIONAL and CONTEXT-AWARE. Not every message needs an elaborate real-world scenario.\n"
-            "- Simple questions deserve simple answers\n"
-            "- Follow-ups should build on previous context\n"
-            "- Use Socratic method for NEW concepts, not greetings or clarifications\n\n"
-            "TEACHING PHILOSOPHY:\n"
-            "Guide discovery. Student should feel:\n"
-            "1) I figured this out myself.\n"
-            "2) This is actually simple.\n"
-            "3) I can handle board exams.\n\n"
+            "MOST IMPORTANT RULES:\n"
+            "1. EXPLAIN SIMPLY - Use language a 14-year-old understands. No jargon without explanation.\n"
+            "2. SHORT RESPONSES - Keep answers 4-8 sentences max. Students lose attention with long text.\n"
+            "3. ONE THING AT A TIME - Teach one concept per message. Don't overload.\n"
+            "4. REAL EXAMPLES FIRST - Always start with a concrete example before abstract rules.\n"
+            "5. EVERYDAY WORDS - Say 'the longest side' not 'hypotenuse' first, then introduce the term.\n"
+            "6. BE WARM - Talk like a friendly senior, not a textbook.\n\n"
+            "WHAT NOT TO DO:\n"
+            "- Don't ask too many questions before explaining. Give useful info, THEN ask ONE question.\n"
+            "- Don't use fancy words like 'articular', 'elucidate', 'metacognition'.\n"
+            "- Don't repeat the same structure for every answer (hook, question, etc.)\n"
+            "- Don't give a wall of text. Break it into small chunks.\n"
+            "- Don't ask 'what do you know about X?' - instead TEACH X simply, then ask if they got it.\n\n"
+            "TEACHING STYLE:\n"
+            "- First: Give a simple real-life example (1-2 lines, relatable to Indian teens)\n"
+            "- Then: Explain the concept in plain language (2-3 lines)\n"
+            "- Then: Show the formula/method with a worked example\n"
+            "- Finally: Ask ONE follow-up question to check understanding\n\n"
             f"{current_step}\n"
             f"{difficulty_note}\n"
             "VERNACULAR STYLE:\n"
             f"- Address as: {vernacular['address']}\n"
             f"- Encouragement: {', '.join(vernacular['encouragement'])}\n"
-            f"- Empathy: {vernacular['empathy']}\n"
-            f"- Challenge: {vernacular['challenge']}\n"
-            f"- Exam context: {vernacular['exam_phrase']}\n\n"
+            f"- Empathy: {vernacular['empathy']}\n\n"
             "IMPORTANT: Read the conversation history carefully. If the student is asking a follow-up question "
             "(like 'show me an example' after discussing a topic), stay on that topic and provide what they asked for.\n\n"
+            "VISUAL AIDS:\n"
+            "- When explaining geometry, triangles, circles, graphs → set visual_needed to true\n"
+            "- For visual_description, use keywords like: 'right triangle', 'circle with tangent', "
+            "'parabola', 'coordinate plane', 'trigonometry triangle', 'linear equation graph'\n"
+            "- These keywords generate actual diagrams, so be specific\n\n"
             "OUTPUT FORMAT:\n"
             "Respond in this JSON structure (wrapped in markdown):\n"
             "```json\n"
             "{\n"
-            "  \"hook\": \"Real-world scenario text (optional for follow-ups)\",\n"
-            "  \"question\": \"Socratic question\",\n"
+            "  \"hook\": \"One-line real-world connection (skip for follow-ups)\",\n"
+            "  \"question\": \"ONE simple follow-up question\",\n"
             "  \"visual_needed\": true,\n"
-            "  \"visual_description\": \"Diagram description\",\n"
-            "  \"formula_latex\": \"LaTeX formula\",\n"
-            "  \"encouragement\": \"Specific praise\",\n"
+            "  \"visual_description\": \"e.g. right triangle with labeled sides\",\n"
+            "  \"formula_latex\": \"LaTeX formula if relevant\",\n"
+            "  \"encouragement\": \"Short specific praise\",\n"
             "  \"next_state\": \"hook/explore/consolidate/apply/reflect\",\n"
             "  \"confidence_update\": {\"concept\": \"name\", \"delta\": 0.15}\n"
             "}\n"
             "```\n"
-            "Then add conversational text after the JSON.\n"
+            "Then add your conversational explanation after the JSON. Keep it SHORT and SIMPLE.\n"
         )
 
     def _analyze_student_input(self, message: str, context: TeachingContext) -> Dict[str, bool]:
@@ -768,74 +779,13 @@ class VedaAgent:
                 if detected_topic_key:
                     break
             logger.info(f"Detected topic: '{detected_topic_name}' (key: {detected_topic_key})")
-            
-            
-            # Use HARDCODED examples for common topics (guarantees correctness!)
-            hardcoded_examples = {
-                "quadratic": (
-                    f"Sure {vernacular['address']}! Here's a quadratic equation example:\n\n"
-                    f"**Solve:** x² - 5x + 6 = 0\n\n"
-                    f"**Solution:**\n"
-                    f"1. Factor the equation: (x - 2)(x - 3) = 0\n"
-                    f"2. Set each factor to zero: x - 2 = 0  OR  x - 3 = 0\n"
-                    f"3. Solutions: x = 2  or  x = 3\n\n"
-                    f"✅ Check: (2)² - 5(2) + 6 = 4 - 10 + 6 = 0 ✓\n\n"
-                    f"Try solving: x² + 7x + 10 = 0"
-                ),
-                "pythagoras": (
-                    f"Pakka! Here's a Pythagoras theorem example:\n\n"
-                    f"**Problem:** A ladder is 5 meters long. It leans against a wall, with its base 3 meters from the wall. How high up the wall does it reach?\n\n"
-                    f"**Solution:**\n"
-                    f"1. Use a² + b² = c²\n"
-                    f"2. 3² + height² = 5²\n"
-                    f"3. 9 + height² = 25\n"
-                    f"4. height² = 16\n"
-                    f"5. height = 4 meters\n\n"
-                    f"Try one: Base = 6m, Hypotenuse = 10m. Find height!"
-                ),
-                "trigonometry": (
-                    f"Here you go {vernacular['address']}!\n\n"
-                    f"**Problem:** A kite flies 50 meters directly above the ground. The string makes a 60° angle with the ground. Find the string length.\n\n"
-                    f"**Solution:**\n"
-                    f"1. sin(60°) = height/string\n"
-                    f"2. sin(60°) = √3/2 = 0.866\n"
-                    f"3. 0.866 = 50/string\n"
-                    f"4. string = 50/0.866 ≈ 57.7 meters\n\n"
-                    f"Now try: height = 40m, angle = 45°"
-                ),
-                "linear": (
-                    f"Sure thing! Here's a linear equation example:\n\n"
-                    f"**Solve:** 2x + 5 = 11\n\n"
-                    f"**Solution:**\n"
-                    f"1. Subtract 5 from both sides: 2x = 6\n"
-                    f"2. Divide by 2: x = 3\n\n"
-                    f"Try solving: 3x - 7 = 14"
-                ),
-            }
-            logger.info(f"Using hardcoded example for '{detected_topic_key}'")
-                
-            # If we have a hardcoded example for this topic, use it!
-            if detected_topic_key in hardcoded_examples:
-                return {
-                    "agent": "veda",
-                    "session_id": session_id,
-                    "state": "example_followup",
-                    "difficulty": context.difficulty.value,
-                    "language": language,
-                    "text": hardcoded_examples[detected_topic_key],
-                    "socratic_question": "",
-                    "encouragement": "",
-                    "has_visual": False,
-                    "visual_data": None,
-                    "formula_html": None,
-                    "exam_question": None,
-                    "mastery_scores": context.concept_mastery,
-                    "attempts": context.attempts_on_current,
-                    "signals": signals,
-                }
-            
-            # Fallback to LLM for other topics
-            logger.info(f"No hardcoded example for '{detected_topic_name}', using LLM generation")
+
+            # Use detected topic to enrich the LLM prompt context
+            if detected_topic_key:
+                topic = detected_topic_name
+                logger.info(f"Enriching LLM context with detected topic: '{topic}'")
+
+            # Always use LLM for dynamic, contextual responses
 
         if signals["repeated_failure"] or signals["frustration"]:
             context.difficulty = DifficultyLevel.STRUGGLING

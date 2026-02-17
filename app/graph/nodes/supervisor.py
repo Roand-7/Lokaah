@@ -106,6 +106,9 @@ class SupervisorNode:
             "/oracle": ("oracle", "manual override: oracle mode", 1.0),
             "/pulse": ("pulse", "manual override: pulse mode", 1.0),
             "/atlas": ("atlas", "manual override: atlas mode", 1.0),
+            "/exam": ("atlas", "manual override: full exam mode", 1.0),
+            "/mock": ("atlas", "manual override: mock test mode", 1.0),
+            "/progress": ("atlas", "manual override: progress check", 1.0),
             "/bye": ("FINISH", "manual override: finish", 1.0),
         }
         if command in mapping:
@@ -115,34 +118,102 @@ class SupervisorNode:
 
     def _route_by_rules(self, text: str) -> RouteDecision:
         message = (text or "").lower()
+        # Normalize hyphens to spaces for consistent matching
+        normalized = message.replace("-", " ")
 
         # Only end session for explicit closures (not simple "thank you")
         if any(phrase in message for phrase in ("goodbye", "see you later", "that's all", "i'm done", "close session")):
             return RouteDecision("FINISH", "conversation closure intent", 0.98)
-        
+
         # Explicit /bye command only
         if message.strip() == "bye" or message.strip() == "/bye":
             return RouteDecision("FINISH", "explicit bye command", 1.0)
-        
+
         # Casual greetings/thanks should stay with VEDA for natural conversation
         if any(phrase in message for phrase in ("thank", "thanks", "hello", "hi ", "hey ", "good morning", "good evening", "namaste")):
             return RouteDecision("veda", "greeting/acknowledgment - continuing conversation", 0.85)
 
+        # PULSE (wellbeing) - checked BEFORE exam/mock rules so emotional
+        # messages mentioning exams get support, not a mock test
         if any(
             token in message
             for token in (
                 "stupid",
                 "panic",
                 "anxious",
+                "anxiety",
                 "stress",
+                "stressed",
                 "depressed",
                 "burnout",
                 "i can't",
                 "i am failing",
                 "i'm failing",
+                "scared",
+                "nervous",
+                "overwhelmed",
+                "crying",
+                "hopeless",
+                "give up",
+                "giving up",
+                "feel dumb",
+                "hate myself",
+                "can't focus",
+                "too much pressure",
             )
         ):
-            return RouteDecision("pulse", "wellbeing support intent", 0.93)
+            return RouteDecision("pulse", "wellbeing support intent", 0.95)
+
+        # Progress tracking and performance review
+        if any(
+            token in message
+            for token in (
+                "my progress",
+                "how am i doing",
+                "show progress",
+                "my performance",
+                "weak areas",
+                "what should i practice",
+                "am i ready",
+                "dashboard",
+                "my score",
+                "my stats",
+                "track progress",
+            )
+        ):
+            return RouteDecision("atlas", "progress tracking and analysis intent", 0.94)
+
+        # Full mock test / board exam practice (different from single questions)
+        if any(
+            token in message
+            for token in (
+                "mock test",
+                "full exam",
+                "board exam",
+                "80 marks",
+                "complete exam",
+                "practice exam",
+                "full paper",
+                "sample paper",
+                "previous year",
+            )
+        ):
+            return RouteDecision("atlas", "full exam generation intent", 0.96)
+
+        # Important questions / exam strategy
+        if any(
+            token in message
+            for token in (
+                "important question",
+                "frequently asked",
+                "high weightage",
+                "exam tips",
+                "exam strategy",
+                "pyq",
+                "marks distribution",
+            )
+        ):
+            return RouteDecision("atlas", "exam strategy and important questions intent", 0.92)
 
         if any(
             token in message
@@ -154,27 +225,35 @@ class SupervisorNode:
                 "revision plan",
                 "study plan",
                 "calendar",
+                "plan my week",
+                "how many days",
             )
         ):
             return RouteDecision("atlas", "planning/schedule intent", 0.9)
 
+        # Challenge / practice (use normalized for hyphen handling)
         if any(
-            token in message
+            token in normalized
             for token in (
                 "challenge",
                 "hard question",
-                "mock test",
                 "test me",
                 "5 mark",
                 "exam pattern",
                 "give question",
-                "practice",
+                "give me a question",
+                "practice question",
+                "quiz me",
                 "quiz",
             )
         ):
-            if any(token in message for token in ("hard", "challenge", "5 mark", "90% fail")):
+            if any(token in normalized for token in ("hard", "challenge", "5 mark", "90% fail", "difficult", "tough", "brutal")):
                 return RouteDecision("spark", "high-intensity challenge intent", 0.91)
             return RouteDecision("oracle", "practice/exam intent", 0.88)
+
+        # General practice request
+        if "practice" in message:
+            return RouteDecision("oracle", "practice intent", 0.85)
 
         if any(
             token in message
@@ -187,6 +266,9 @@ class SupervisorNode:
                 "why",
                 "concept",
                 "confused",
+                "how does",
+                "tell me about",
+                "what are",
             )
         ):
             return RouteDecision("veda", "teaching/concept intent", 0.86)

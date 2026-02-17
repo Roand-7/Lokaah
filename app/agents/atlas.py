@@ -4,6 +4,7 @@ Develops future-ready strategic thinking through personalized goal systems
 """
 
 import logging
+import httpx
 from typing import Any, Dict, List, Optional
 from dataclasses import dataclass
 import os
@@ -77,7 +78,7 @@ class AtlasAgent:
         student_context: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """
-        Create strategic study plans
+        Create strategic study plans, track progress, or generate mock tests
 
         Args:
             student_message: Student's planning request
@@ -89,6 +90,49 @@ class AtlasAgent:
         Returns:
             Response with study plan and/or tool calls
         """
+
+        # Detect intent
+        message_lower = student_message.lower()
+        
+        # Progress tracking request
+        if any(keyword in message_lower for keyword in ["progress", "how am i doing", "my performance", "weak areas", "stats"]):
+            try:
+                # Try to fetch progress data from API
+                import httpx
+                async with httpx.AsyncClient() as client:
+                    response = await client.get(f"http://localhost:8000/api/v1/progress/{session_id}")
+                    if response.status_code == 200:
+                        progress_data = response.json()
+                        return self._format_progress_response(progress_data, session_id)
+            except Exception as e:
+                logging.getLogger(__name__).warning(f"Could not fetch progress: {e}")
+                return {
+                    "agent": "atlas",
+                    "session_id": session_id,
+                    "text": "I'd love to show your progress, but I need a few more practice sessions from you first! Try solving 10 questions, then ask me again. 📊"
+                }
+        
+        # Mock test / full exam request
+        if any(keyword in message_lower for keyword in ["mock test", "full exam", "80 marks", "board exam", "sample paper", "complete exam"]):
+            return {
+                "agent": "atlas",
+                "session_id": session_id,
+                "text": """🎯 **Ready for a Full Board Exam Mock Test?**
+
+I can generate a complete CBSE-style exam for you:
+- **Total Marks:** 80
+- **Duration:** 3 hours
+- **Sections:** A (MCQs), B (Short), C (Long), D (Case Study)
+- **Pattern:** Exactly like board exams
+
+**Which subjects do you want to focus on?**
+Tell me chapters, and I'll create your personalized mock test! For example:
+- "All chapters from Class 10 Math"
+- "Only Trigonometry, Quadratic Equations, and Statistics"
+- "My weak areas: Probability and Constructions"
+
+Once you tell me, I'll generate a full exam paper you can practice with proper timing! ⏱️"""
+            }
 
         # Fallback if no Gemini client
         if not self.client:
@@ -111,9 +155,10 @@ class AtlasAgent:
                 "contents": prompt,
             }
 
-            # Add tools if provided
-            if tools:
-                gen_args["tools"] = tools
+            # Tools parameter disabled - causes TypeError with current Gemini client version
+            # Will be re-enabled when Gemini SDK supports function calling via this param
+            # if tools:
+            #     gen_args["tools"] = tools
 
             response = self.client.models.generate_content(**gen_args)
 
@@ -239,10 +284,10 @@ IF student asks "When is the exam?":
 → Adjust strategy based on proximity
 
 RESPONSE FORMAT:
-1. Strategic context: "With {days} days until exam, here's the strategy..."
+1. Strategic context: "With X days until exam, here's the strategy..."
 2. Prioritized plan: "Focus 80% effort on these 3 topics first..."
 3. Time allocation: "Week 1: [specific topics with hours]..."
-4. Meta-lesson: "This teaches you [planning skill] you'll use in college/career"
+4. Meta-lesson: "This teaches you a planning skill you'll use in college/career"
 
 Remember: You're not just helping students pass exams - you're building strategic thinkers who excel at planning their entire lives.
 """
@@ -294,4 +339,51 @@ Create a strategic, actionable study plan. Use tools when appropriate. Teach the
                 "Tell me which topics feel hardest right now, and we'll prioritize from there."
             ),
             "fallback": True,
+        }
+    def _format_progress_response(self, progress_data: Dict[str, Any], session_id: str) -> Dict[str, Any]:
+        """Format progress data into a student-friendly response"""
+        
+        total_attempted = progress_data.get("total_questions_attempted", 0)
+        accuracy = progress_data.get("accuracy", 0)
+        weak_areas = progress_data.get("weak_areas", [])
+        mastered_topics = progress_data.get("mastered_topics", [])
+        overall_mastery = progress_data.get("overall_mastery", 0) * 100
+        recommendations = progress_data.get("recommendations", [])
+        
+        # Build response text
+        response_lines = [
+            "📊 **Your Progress Report**\n",
+            f"**Questions Attempted:** {total_attempted}",
+            f"**Overall Accuracy:** {accuracy}%",
+            f"**Mastery Level:** {overall_mastery:.0f}%\n"
+        ]
+        
+        if mastered_topics:
+            response_lines.append("✅ **Mastered Topics:**")
+            for topic in mastered_topics[:5]:
+                response_lines.append(f"  - {topic.replace('_', ' ').title()}")
+            response_lines.append("")
+        
+        if weak_areas:
+            response_lines.append("⚠️ **Needs Practice:**")
+            for area in weak_areas[:5]:
+                response_lines.append(f"  - {area.replace('_', ' ').title()}")
+            response_lines.append("")
+        
+        if recommendations:
+            response_lines.append("💡 **Recommendations:**")
+            for rec in recommendations:
+                response_lines.append(f"  - {rec}")
+        
+        if total_attempted < 10:
+            response_lines.append("\n🎯 **Keep going!** Complete at least 50 questions for a detailed analysis.")
+        elif accuracy < 60:
+            response_lines.append("\n📚 **Focus on understanding first.** Quality over speed!")
+        elif accuracy > 85:
+            response_lines.append("\n🌟 **Excellent work!** Ready for harder challenges?")
+        
+        return {
+            "agent": "atlas",
+            "session_id": session_id,
+            "text": "\n".join(response_lines)
         }

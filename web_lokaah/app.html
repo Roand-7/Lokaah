@@ -1,30 +1,36 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>LOKAAH - Your Study Companion</title>
-    <meta name="description" content="Chat with LOKAAH, your personal AI tutor. Get personalized math questions, visual explanations, and guided problem-solving.">
+    <title>LOKAAH &mdash; Your AI Tutor</title>
+    <meta name="description" content="Chat with LOKAAH, your personal AI tutor. Get personalized explanations, practice questions, and wellbeing support.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- KaTeX Math Rendering -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
-    <link rel="stylesheet" href="css/app.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/chat-luxury.css">
 </head>
 <body>
     <div class="app-container">
+        <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <a href="index.html" class="sidebar-logo">
-                    <div class="logo-icon-sm">L</div>
-                    <span class="logo-text-sm">L O K A A H</span>
+                    <div class="logo-mark-sm">L</div>
+                    <span class="logo-word-sm">LOKAAH</span>
                 </a>
                 <button class="sidebar-close" id="sidebarClose">
                     <i class="fas fa-times"></i>
@@ -41,7 +47,7 @@
                     <h4>Today</h4>
                     <div class="history-item active" id="activeHistoryItem">
                         <i class="fas fa-message"></i>
-                        <span>Lokaah AI Session</span>
+                        <span>LOKAAH AI Session</span>
                     </div>
                 </div>
             </div>
@@ -54,25 +60,26 @@
             </div>
         </aside>
 
-        <main class="chat-main agent-veda" id="chatMain">
+        <!-- Main Chat Area -->
+        <main class="chat-main" id="chatMain">
             <header class="chat-header" id="chatHeader">
                 <button class="menu-btn" id="menuBtn">
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="header-center">
                     <span class="header-badge" id="agentBadge">LOKAAH AI</span>
-                    <span class="header-status" id="agentStatus">Teaching mode active</span>
+                    <span class="header-status" id="status-text">Ready to learn</span>
                 </div>
                 <div class="header-actions"></div>
             </header>
 
-            <div class="messages-container" id="messagesContainer">
+            <div class="messages-container" id="messages">
                 <div class="welcome-screen" id="welcomeScreen">
-                    <div class="welcome-icon">AI</div>
-                    <h2>Hi! I am LOKAAH</h2>
+                    <div class="welcome-icon">L</div>
+                    <h2>Hi, I'm LOKAAH</h2>
                     <p>
-                        One chat. Multiple expert modes. You talk to one smart friend and I switch personas in the
-                        background to teach, challenge, calm, or plan.
+                        One chat. Multiple expert modes. I seamlessly switch between teaching,
+                        challenging, calming, and planning &mdash; all invisible to you.
                     </p>
 
                     <div class="quick-actions">
@@ -86,10 +93,18 @@
                         </button>
                         <button class="quick-action" data-message="Give me a hard 5-mark question from trigonometry">
                             <i class="fas fa-bolt"></i>
-                            <span>Give Me a Challenge</span>
+                            <span>Challenge Me</span>
+                        </button>
+                        <button class="quick-action" data-message="Show my progress and weak areas">
+                            <i class="fas fa-chart-line"></i>
+                            <span>My Progress</span>
+                        </button>
+                        <button class="quick-action" data-message="Give me a full 80 marks board exam mock test">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Mock Test</span>
                         </button>
                         <button class="quick-action" data-message="Create a study plan for this week for class 10 math">
-                            <i class="fas fa-calendar-week"></i>
+                            <i class="fas fa-calendar-alt"></i>
                             <span>Plan My Week</span>
                         </button>
                     </div>
@@ -102,25 +117,99 @@
                     <button class="command-chip" data-message="/spark I want a brutal exam drill">/spark</button>
                     <button class="command-chip" data-message="/chill I am overwhelmed right now">/chill</button>
                     <button class="command-chip" data-message="/plan Build my weekly revision plan">/plan</button>
+                    <button class="command-chip" data-message="/progress Show my progress and weak areas">/progress</button>
+                    <button class="command-chip" data-message="/mock Give me a full board exam mock test">/mock</button>
                 </div>
 
-                <div class="input-container">
+                <form id="chat-form" class="input-container">
                     <textarea
-                        id="messageInput"
-                        placeholder="Ask anything... (or use /test, /spark, /chill, /plan)"
+                        id="chat-input"
+                        placeholder="Ask anything... type naturally in any language"
                         rows="1"
                         maxlength="2000"
                     ></textarea>
-                    <button class="send-btn" id="sendBtn" disabled>
+                    <button type="submit" class="send-btn" id="sendBtn" disabled>
                         <i class="fas fa-arrow-up"></i>
                     </button>
-                </div>
+                </form>
                 <p class="input-disclaimer">LOKAAH can make mistakes. Always verify important calculations.</p>
             </div>
         </main>
     </div>
 
     <script src="js/app_v2.js"></script>
+    <script>
+        // Quick actions & command chips
+        document.querySelectorAll('.quick-action, .command-chip').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const msg = btn.dataset.message;
+                const input = document.getElementById('chat-input');
+                if (input && msg) {
+                    input.value = msg;
+                    input.dispatchEvent(new Event('input'));
+                    const form = document.getElementById('chat-form');
+                    if (form) form.dispatchEvent(new Event('submit', { cancelable: true }));
+                }
+                const welcome = document.getElementById('welcomeScreen');
+                if (welcome) welcome.style.display = 'none';
+            });
+        });
+
+        // Sidebar toggle (mobile)
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebar = document.getElementById('sidebar');
+        const sidebarClose = document.getElementById('sidebarClose');
+
+        if (menuBtn && sidebar) {
+            menuBtn.addEventListener('click', () => sidebar.classList.add('open'));
+        }
+        if (sidebarClose && sidebar) {
+            sidebarClose.addEventListener('click', () => sidebar.classList.remove('open'));
+        }
+
+        // Auto-resize textarea
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('sendBtn');
+
+        if (chatInput) {
+            chatInput.addEventListener('input', () => {
+                chatInput.style.height = 'auto';
+                chatInput.style.height = Math.min(chatInput.scrollHeight, 140) + 'px';
+                if (sendBtn) sendBtn.disabled = !chatInput.value.trim();
+            });
+
+            chatInput.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    const form = document.getElementById('chat-form');
+                    if (form && chatInput.value.trim()) {
+                        form.dispatchEvent(new Event('submit', { cancelable: true }));
+                    }
+                }
+            });
+        }
+
+        // Hide welcome on first message
+        const messagesContainer = document.getElementById('messages');
+        if (messagesContainer) {
+            const observer = new MutationObserver(() => {
+                const welcome = document.getElementById('welcomeScreen');
+                const messages = messagesContainer.querySelectorAll('.chat-message');
+                if (welcome && messages.length > 0) {
+                    welcome.style.display = 'none';
+                }
+            });
+            observer.observe(messagesContainer, { childList: true });
+        }
+
+        // New chat button
+        const newChatBtn = document.getElementById('newChatBtn');
+        if (newChatBtn) {
+            newChatBtn.addEventListener('click', () => {
+                localStorage.removeItem('lokaah_chat_session');
+                window.location.reload();
+            });
+        }
+    </script>
 </body>
 </html>
-
