@@ -1,0 +1,184 @@
+[
+  {
+    "pattern_id": "cbse10_triangles_001",
+    "chapter": "Triangles",
+    "topic": "Basic Proportionality Theorem",
+    "difficulty": "Easy",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_002",
+    "chapter": "Triangles",
+    "topic": "Similarity Criteria",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_003",
+    "chapter": "Triangles",
+    "topic": "Area Ratios",
+    "difficulty": "Hard",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_004",
+    "chapter": "Triangles",
+    "topic": "Pythagoras Applications",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_005",
+    "chapter": "Triangles",
+    "topic": "Basic Proportionality Theorem",
+    "difficulty": "Easy",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_006",
+    "chapter": "Triangles",
+    "topic": "Similarity Criteria",
+    "difficulty": "Medium",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_007",
+    "chapter": "Triangles",
+    "topic": "Area Ratios",
+    "difficulty": "Hard",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_008",
+    "chapter": "Triangles",
+    "topic": "Pythagoras Applications",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_009",
+    "chapter": "Triangles",
+    "topic": "Basic Proportionality Theorem",
+    "difficulty": "Easy",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_010",
+    "chapter": "Triangles",
+    "topic": "Similarity Criteria",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_011",
+    "chapter": "Triangles",
+    "topic": "Area Ratios",
+    "difficulty": "Hard",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_012",
+    "chapter": "Triangles",
+    "topic": "Pythagoras Applications",
+    "difficulty": "Medium",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_013",
+    "chapter": "Triangles",
+    "topic": "Basic Proportionality Theorem",
+    "difficulty": "Easy",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_014",
+    "chapter": "Triangles",
+    "topic": "Similarity Criteria",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_015",
+    "chapter": "Triangles",
+    "topic": "Area Ratios",
+    "difficulty": "Hard",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_016",
+    "chapter": "Triangles",
+    "topic": "Pythagoras Applications",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  }
+]

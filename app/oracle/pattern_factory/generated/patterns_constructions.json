@@ -1,0 +1,184 @@
+[
+  {
+    "pattern_id": "cbse10_constructions_001",
+    "chapter": "Constructions",
+    "topic": "Division of Line Segment",
+    "difficulty": "Easy",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_002",
+    "chapter": "Constructions",
+    "topic": "Tangent from External Point",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_003",
+    "chapter": "Constructions",
+    "topic": "Similar Triangle Construction",
+    "difficulty": "Hard",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_004",
+    "chapter": "Constructions",
+    "topic": "Scale Factor Construction",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_005",
+    "chapter": "Constructions",
+    "topic": "Division of Line Segment",
+    "difficulty": "Easy",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_006",
+    "chapter": "Constructions",
+    "topic": "Tangent from External Point",
+    "difficulty": "Medium",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_007",
+    "chapter": "Constructions",
+    "topic": "Similar Triangle Construction",
+    "difficulty": "Hard",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_008",
+    "chapter": "Constructions",
+    "topic": "Scale Factor Construction",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_009",
+    "chapter": "Constructions",
+    "topic": "Division of Line Segment",
+    "difficulty": "Easy",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_010",
+    "chapter": "Constructions",
+    "topic": "Tangent from External Point",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_011",
+    "chapter": "Constructions",
+    "topic": "Similar Triangle Construction",
+    "difficulty": "Hard",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_012",
+    "chapter": "Constructions",
+    "topic": "Scale Factor Construction",
+    "difficulty": "Medium",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_013",
+    "chapter": "Constructions",
+    "topic": "Division of Line Segment",
+    "difficulty": "Easy",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_014",
+    "chapter": "Constructions",
+    "topic": "Tangent from External Point",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_015",
+    "chapter": "Constructions",
+    "topic": "Similar Triangle Construction",
+    "difficulty": "Hard",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_016",
+    "chapter": "Constructions",
+    "topic": "Scale Factor Construction",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  }
+]

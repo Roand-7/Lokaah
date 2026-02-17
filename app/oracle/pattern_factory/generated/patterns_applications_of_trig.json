@@ -1,0 +1,189 @@
+[
+  {
+    "pattern_id": "cbse10_applications_of_trig_001",
+    "chapter": "Applications of Trig",
+    "topic": "Heights and Distances",
+    "difficulty": "Easy",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_002",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Elevation",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_003",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Depression",
+    "difficulty": "Hard",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_004",
+    "chapter": "Applications of Trig",
+    "topic": "Two-Observation Problems",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_005",
+    "chapter": "Applications of Trig",
+    "topic": "Heights and Distances",
+    "difficulty": "Easy",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_006",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Elevation",
+    "difficulty": "Medium",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_007",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Depression",
+    "difficulty": "Hard",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_008",
+    "chapter": "Applications of Trig",
+    "topic": "Two-Observation Problems",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_009",
+    "chapter": "Applications of Trig",
+    "topic": "Heights and Distances",
+    "difficulty": "Easy",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_010",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Elevation",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_011",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Depression",
+    "difficulty": "Hard",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_012",
+    "chapter": "Applications of Trig",
+    "topic": "Two-Observation Problems",
+    "difficulty": "Medium",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_013",
+    "chapter": "Applications of Trig",
+    "topic": "Heights and Distances",
+    "difficulty": "Easy",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_014",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Elevation",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_015",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Depression",
+    "difficulty": "Hard",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_016",
+    "chapter": "Applications of Trig",
+    "topic": "Two-Observation Problems",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  }
+]

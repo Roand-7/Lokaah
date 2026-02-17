@@ -1,0 +1,210 @@
+[
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_001",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Nth Term",
+    "difficulty": "Easy",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_002",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Sum of N Terms",
+    "difficulty": "Medium",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_003",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Find Common Difference",
+    "difficulty": "Hard",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_004",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Daily Life Word Problems",
+    "difficulty": "Medium",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_005",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Nth Term",
+    "difficulty": "Easy",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_006",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Sum of N Terms",
+    "difficulty": "Medium",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_007",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Find Common Difference",
+    "difficulty": "Hard",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_008",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Daily Life Word Problems",
+    "difficulty": "Medium",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_009",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Nth Term",
+    "difficulty": "Easy",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_010",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Sum of N Terms",
+    "difficulty": "Medium",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_011",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Find Common Difference",
+    "difficulty": "Hard",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_012",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Daily Life Word Problems",
+    "difficulty": "Medium",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_013",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Nth Term",
+    "difficulty": "Easy",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_014",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Sum of N Terms",
+    "difficulty": "Medium",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_015",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Find Common Difference",
+    "difficulty": "Hard",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_016",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Daily Life Word Problems",
+    "difficulty": "Medium",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  }
+]

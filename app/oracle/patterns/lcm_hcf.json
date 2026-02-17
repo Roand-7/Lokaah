@@ -1,0 +1,59 @@
+{
+  "pattern_id": "lcm_hcf",
+  "topic": "Real Numbers",
+  "marks": 2,
+  "difficulty": 0.4,
+  "template_text": "Find the HCF and LCM of {a} and {b} using prime factorization.",
+  "variables": {
+    "a": {
+      "type": "choice",
+      "choices": [
+        12,
+        18,
+        24,
+        36,
+        48,
+        60,
+        72
+      ]
+    },
+    "b": {
+      "type": "choice",
+      "choices": [
+        15,
+        20,
+        30,
+        45,
+        50,
+        75,
+        90
+      ]
+    }
+  },
+  "solution_template": [
+    "Step 1",
+    "Step 2",
+    "Step 3"
+  ],
+  "answer_template": "{answer}",
+  "validation_rules": [],
+  "socratic_hints": [
+    {
+      "level": 1,
+      "hint": "Think about the approach",
+      "nudge": "Use the relevant formula"
+    },
+    {
+      "level": 2,
+      "hint": "Calculate intermediate values",
+      "nudge": "Substitute given values"
+    },
+    {
+      "level": 3,
+      "hint": "Complete the solution",
+      "nudge": "Simplify to get final answer"
+    }
+  ],
+  "created_at": "2026-02-16T22:02:59.718668",
+  "updated_at": "2026-02-16T22:02:59.718819"
+}

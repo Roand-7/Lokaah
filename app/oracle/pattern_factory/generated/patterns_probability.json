@@ -1,0 +1,189 @@
+[
+  {
+    "pattern_id": "cbse10_probability_001",
+    "chapter": "Probability",
+    "topic": "Theoretical Probability",
+    "difficulty": "Easy",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_002",
+    "chapter": "Probability",
+    "topic": "Cards and Dice",
+    "difficulty": "Medium",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_003",
+    "chapter": "Probability",
+    "topic": "Complementary Events",
+    "difficulty": "Hard",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_004",
+    "chapter": "Probability",
+    "topic": "At Least One Event",
+    "difficulty": "Medium",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_005",
+    "chapter": "Probability",
+    "topic": "Theoretical Probability",
+    "difficulty": "Easy",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_006",
+    "chapter": "Probability",
+    "topic": "Cards and Dice",
+    "difficulty": "Medium",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_007",
+    "chapter": "Probability",
+    "topic": "Complementary Events",
+    "difficulty": "Hard",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_008",
+    "chapter": "Probability",
+    "topic": "At Least One Event",
+    "difficulty": "Medium",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_009",
+    "chapter": "Probability",
+    "topic": "Theoretical Probability",
+    "difficulty": "Easy",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_010",
+    "chapter": "Probability",
+    "topic": "Cards and Dice",
+    "difficulty": "Medium",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_011",
+    "chapter": "Probability",
+    "topic": "Complementary Events",
+    "difficulty": "Hard",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_012",
+    "chapter": "Probability",
+    "topic": "At Least One Event",
+    "difficulty": "Medium",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_013",
+    "chapter": "Probability",
+    "topic": "Theoretical Probability",
+    "difficulty": "Easy",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_014",
+    "chapter": "Probability",
+    "topic": "Cards and Dice",
+    "difficulty": "Medium",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_015",
+    "chapter": "Probability",
+    "topic": "Complementary Events",
+    "difficulty": "Hard",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_016",
+    "chapter": "Probability",
+    "topic": "At Least One Event",
+    "difficulty": "Medium",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  }
+]

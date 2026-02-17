@@ -1,0 +1,49 @@
+{
+  "pattern_id": "irrationality_proof",
+  "topic": "Real Numbers",
+  "marks": 3,
+  "difficulty": 0.7,
+  "template_text": "Prove that √{base} is irrational.",
+  "variables": {
+    "base": {
+      "type": "choice",
+      "choices": [2, 3, 5, 7]
+    }
+  },
+  "solution_template": [
+    "Assume √{base} is rational",
+    "Let √{base} = p/q where p, q are coprime integers",
+    "Squaring both sides: {base} = p²/q²",
+    "Therefore p² = {base}q²",
+    "This means {base} divides p²",
+    "Hence {base} divides p",
+    "Let p = {base}k for some integer k",
+    "Substituting: ({base}k)² = {base}q²",
+    "{base}k² = q²",
+    "This means {base} divides q²",
+    "Hence {base} divides q",
+    "But this contradicts our assumption that p and q are coprime",
+    "Therefore, √{base} is irrational"
+  ],
+  "answer_template": "√{base} is irrational (proof by contradiction)",
+  "validation_rules": [],
+  "socratic_hints": [
+    {
+      "level": 1,
+      "hint": "What method proves irrationality?",
+      "nudge": "Try proof by contradiction"
+    },
+    {
+      "level": 2,
+      "hint": "Assume the number is rational. What does that mean?",
+      "nudge": "It can be written as p/q where p, q are coprime"
+    },
+    {
+      "level": 3,
+      "hint": "Square both sides and see what happens",
+      "nudge": "You'll find a contradiction with the coprime assumption"
+    }
+  ],
+  "created_at": "2026-02-16T22:02:59.711411",
+  "updated_at": "2026-02-16T22:02:59.711565"
+}

@@ -1,0 +1,439 @@
+/* ========================================
+   LOKAAH — Animations Stylesheet
+   ======================================== */
+
+/* AOS - Animate On Scroll Initialization */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(30px);
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+}
+
+[data-aos="fade-down"] {
+    transform: translateY(-30px);
+}
+
+[data-aos="fade-down"].aos-animate {
+    transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+    transform: translateX(30px);
+}
+
+[data-aos="fade-left"].aos-animate {
+    transform: translateX(0);
+}
+
+[data-aos="fade-right"] {
+    transform: translateX(-30px);
+}
+
+[data-aos="fade-right"].aos-animate {
+    transform: translateX(0);
+}
+
+[data-aos="zoom-in"] {
+    transform: scale(0.9);
+}
+
+[data-aos="zoom-in"].aos-animate {
+    transform: scale(1);
+}
+
+/* ========================================
+   Gradient Text Animation
+   ======================================== */
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #FF9933, #FFB366, #FF8C1A, #FFB366, #FF9933);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 6s ease infinite;
+}
+
+/* ========================================
+   Gradient Orb Animations
+   ======================================== */
+@keyframes float-orb-1 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(30px, -40px) scale(1.05);
+    }
+    66% {
+        transform: translate(-20px, 20px) scale(0.95);
+    }
+}
+
+@keyframes float-orb-2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(-30px, 30px) scale(1.08);
+    }
+    66% {
+        transform: translate(25px, -25px) scale(0.92);
+    }
+}
+
+@keyframes float-orb-3 {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    33% {
+        transform: translate(calc(-50% + 20px), calc(-50% - 20px)) scale(1.1);
+    }
+    66% {
+        transform: translate(calc(-50% - 15px), calc(-50% + 15px)) scale(0.9);
+    }
+}
+
+.orb-1 {
+    animation: float-orb-1 15s ease-in-out infinite;
+}
+
+.orb-2 {
+    animation: float-orb-2 18s ease-in-out infinite;
+}
+
+.orb-3 {
+    animation: float-orb-3 20s ease-in-out infinite;
+}
+
+/* ========================================
+   Button Animations
+   ======================================== */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Pulse glow on primary buttons */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(255, 153, 51, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(255, 153, 51, 0.5);
+    }
+}
+
+.btn-primary {
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.btn-primary:hover {
+    animation: none;
+    box-shadow: 0 6px 25px rgba(255, 153, 51, 0.4);
+}
+
+/* ========================================
+   Card Hover Effects
+   ======================================== */
+.feature-card,
+.subject-card,
+.pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #FF9933, #FFB366);
+    border-radius: var(--card-radius) var(--card-radius) 0 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.feature-card {
+    position: relative;
+}
+
+.feature-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* ========================================
+   Icon Animations
+   ======================================== */
+.feature-icon {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+    background: rgba(255, 153, 51, 0.15);
+}
+
+/* ========================================
+   Scroll Indicator Animation
+   ======================================== */
+@keyframes scroll-bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(8px);
+    }
+}
+
+.scroll-indicator {
+    animation: scroll-bounce 2s ease-in-out infinite;
+}
+
+/* ========================================
+   FAQ Animations
+   ======================================== */
+.faq-answer {
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+/* ========================================
+   Navbar Scroll Animation
+   ======================================== */
+.navbar {
+    transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+}
+
+/* ========================================
+   Section Badge Hover
+   ======================================== */
+.section-badge {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.section-badge:hover {
+    background: rgba(255, 153, 51, 0.15);
+}
+
+/* ========================================
+   Typing Indicator Animation
+   ======================================== */
+@keyframes typing-dot {
+    0%, 60%, 100% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+    30% {
+        transform: translateY(-6px);
+        opacity: 1;
+    }
+}
+
+.typing-indicator span:nth-child(1) {
+    animation: typing-dot 1.4s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(2) {
+    animation: typing-dot 1.4s infinite ease-in-out 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+    animation: typing-dot 1.4s infinite ease-in-out 0.4s;
+}
+
+/* ========================================
+   Chat Preview Entrance
+   ======================================== */
+@keyframes slide-up-fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.chat-preview .message {
+    animation: slide-up-fade 0.5s ease forwards;
+    opacity: 0;
+}
+
+.chat-preview .message:nth-child(1) {
+    animation-delay: 0.8s;
+}
+
+.chat-preview .message:nth-child(2) {
+    animation-delay: 1.6s;
+}
+
+.chat-preview .message:nth-child(3) {
+    animation-delay: 2.4s;
+}
+
+.chat-preview .message:nth-child(4) {
+    animation-delay: 3.2s;
+}
+
+/* ========================================
+   Roadmap Animation
+   ======================================== */
+@keyframes roadmap-pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 2px #FF9933, 0 0 12px rgba(255, 153, 51, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 2px #FF9933, 0 0 20px rgba(255, 153, 51, 0.6);
+    }
+}
+
+.roadmap-step.active .roadmap-dot {
+    animation: roadmap-pulse 2s ease-in-out infinite;
+}
+
+/* ========================================
+   Comparison Card Hover
+   ======================================== */
+.comparison-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comparison-card:hover {
+    transform: translateY(-4px);
+}
+
+.comparison-new:hover {
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.3);
+}
+
+.comparison-old:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   Logo Icon Animation
+   ======================================== */
+@keyframes logo-glow {
+    0%, 100% {
+        box-shadow: 0 0 0 rgba(255, 153, 51, 0);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 153, 51, 0.3);
+    }
+}
+
+.logo-icon {
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-icon {
+    transform: rotate(-5deg) scale(1.05);
+    animation: logo-glow 1.5s ease-in-out;
+}
+
+/* ========================================
+   Social Link Hover
+   ======================================== */
+.social-link {
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   Step Card Hover
+   ======================================== */
+.step-card {
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    border-color: rgba(255, 153, 51, 0.3);
+    background: rgba(255, 153, 51, 0.05);
+}
+
+/* ========================================
+   Smooth Page Load
+   ======================================== */
+@keyframes page-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: page-fade-in 0.5s ease;
+}
+
+/* ========================================
+   Reduced Motion
+   ======================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    
+    .gradient-text {
+        animation: none;
+    }
+}

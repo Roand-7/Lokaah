@@ -1,0 +1,21 @@
+{
+  "question_id": "Q202602142318458154",
+  "question_text": "Question about trigonometry",
+  "solution_steps": [
+    "Step 1",
+    "Step 2",
+    "Step 3"
+  ],
+  "final_answer": "Answer",
+  "socratic_hints": [],
+  "jsx_graph_code": null,
+  "graph_bounding_box": [
+    -10,
+    10,
+    10,
+    -10
+  ],
+  "difficulty": 0.6,
+  "marks": 3,
+  "source": "pattern"
+}

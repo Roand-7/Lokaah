@@ -1,0 +1,29 @@
+{
+  "exam_window": "March 2026",
+  "weekly_plan": [
+    {
+      "day": "Monday",
+      "focus": "Trigonometry core identities + 10 questions",
+      "duration": "75m"
+    },
+    {
+      "day": "Wednesday",
+      "focus": "Quadratic equations mixed set",
+      "duration": "60m"
+    },
+    {
+      "day": "Friday",
+      "focus": "Statistics + Probability timed drill",
+      "duration": "70m"
+    },
+    {
+      "day": "Sunday",
+      "focus": "Full chapter revision + error log review",
+      "duration": "90m"
+    }
+  ],
+  "recovery_rules": [
+    "If 2 sessions missed, restart with 30-minute easy set.",
+    "After every 90 minutes, mandatory 10-minute break."
+  ]
+}

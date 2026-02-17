@@ -1,0 +1,194 @@
+[
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_001",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Cone and Cylinder",
+    "difficulty": "Easy",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_002",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Sphere and Hemisphere",
+    "difficulty": "Medium",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_003",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Frustum",
+    "difficulty": "Hard",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_004",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Composite Solids",
+    "difficulty": "Medium",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_005",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Cone and Cylinder",
+    "difficulty": "Easy",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_006",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Sphere and Hemisphere",
+    "difficulty": "Medium",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_007",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Frustum",
+    "difficulty": "Hard",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_008",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Composite Solids",
+    "difficulty": "Medium",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_009",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Cone and Cylinder",
+    "difficulty": "Easy",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_010",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Sphere and Hemisphere",
+    "difficulty": "Medium",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_011",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Frustum",
+    "difficulty": "Hard",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_012",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Composite Solids",
+    "difficulty": "Medium",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_013",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Cone and Cylinder",
+    "difficulty": "Easy",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_014",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Sphere and Hemisphere",
+    "difficulty": "Medium",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_015",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Frustum",
+    "difficulty": "Hard",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_016",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Composite Solids",
+    "difficulty": "Medium",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  }
+]

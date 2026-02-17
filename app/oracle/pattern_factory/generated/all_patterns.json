@@ -1,0 +1,2945 @@
+[
+  {
+    "pattern_id": "cbse10_real_numbers_001",
+    "chapter": "Real Numbers",
+    "topic": "Euclid Division Algorithm",
+    "difficulty": "Easy",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_002",
+    "chapter": "Real Numbers",
+    "topic": "HCF and LCM",
+    "difficulty": "Medium",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_003",
+    "chapter": "Real Numbers",
+    "topic": "Fundamental Theorem of Arithmetic",
+    "difficulty": "Hard",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_004",
+    "chapter": "Real Numbers",
+    "topic": "Terminating Decimal Expansion",
+    "difficulty": "Medium",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_005",
+    "chapter": "Real Numbers",
+    "topic": "Euclid Division Algorithm",
+    "difficulty": "Easy",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_006",
+    "chapter": "Real Numbers",
+    "topic": "HCF and LCM",
+    "difficulty": "Medium",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_007",
+    "chapter": "Real Numbers",
+    "topic": "Fundamental Theorem of Arithmetic",
+    "difficulty": "Hard",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_008",
+    "chapter": "Real Numbers",
+    "topic": "Terminating Decimal Expansion",
+    "difficulty": "Medium",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_009",
+    "chapter": "Real Numbers",
+    "topic": "Euclid Division Algorithm",
+    "difficulty": "Easy",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_010",
+    "chapter": "Real Numbers",
+    "topic": "HCF and LCM",
+    "difficulty": "Medium",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_011",
+    "chapter": "Real Numbers",
+    "topic": "Fundamental Theorem of Arithmetic",
+    "difficulty": "Hard",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_012",
+    "chapter": "Real Numbers",
+    "topic": "Terminating Decimal Expansion",
+    "difficulty": "Medium",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_013",
+    "chapter": "Real Numbers",
+    "topic": "Euclid Division Algorithm",
+    "difficulty": "Easy",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_014",
+    "chapter": "Real Numbers",
+    "topic": "HCF and LCM",
+    "difficulty": "Medium",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_015",
+    "chapter": "Real Numbers",
+    "topic": "Fundamental Theorem of Arithmetic",
+    "difficulty": "Hard",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_016",
+    "chapter": "Real Numbers",
+    "topic": "Terminating Decimal Expansion",
+    "difficulty": "Medium",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_001",
+    "chapter": "Polynomials",
+    "topic": "Zeroes of Polynomial",
+    "difficulty": "Easy",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_002",
+    "chapter": "Polynomials",
+    "topic": "Relationship Between Coefficients and Roots",
+    "difficulty": "Medium",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_003",
+    "chapter": "Polynomials",
+    "topic": "Remainder Theorem",
+    "difficulty": "Hard",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_004",
+    "chapter": "Polynomials",
+    "topic": "Factor Theorem",
+    "difficulty": "Medium",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_005",
+    "chapter": "Polynomials",
+    "topic": "Zeroes of Polynomial",
+    "difficulty": "Easy",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_006",
+    "chapter": "Polynomials",
+    "topic": "Relationship Between Coefficients and Roots",
+    "difficulty": "Medium",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_007",
+    "chapter": "Polynomials",
+    "topic": "Remainder Theorem",
+    "difficulty": "Hard",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_008",
+    "chapter": "Polynomials",
+    "topic": "Factor Theorem",
+    "difficulty": "Medium",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_009",
+    "chapter": "Polynomials",
+    "topic": "Zeroes of Polynomial",
+    "difficulty": "Easy",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_010",
+    "chapter": "Polynomials",
+    "topic": "Relationship Between Coefficients and Roots",
+    "difficulty": "Medium",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_011",
+    "chapter": "Polynomials",
+    "topic": "Remainder Theorem",
+    "difficulty": "Hard",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_012",
+    "chapter": "Polynomials",
+    "topic": "Factor Theorem",
+    "difficulty": "Medium",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_013",
+    "chapter": "Polynomials",
+    "topic": "Zeroes of Polynomial",
+    "difficulty": "Easy",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_014",
+    "chapter": "Polynomials",
+    "topic": "Relationship Between Coefficients and Roots",
+    "difficulty": "Medium",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_015",
+    "chapter": "Polynomials",
+    "topic": "Remainder Theorem",
+    "difficulty": "Hard",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_016",
+    "chapter": "Polynomials",
+    "topic": "Factor Theorem",
+    "difficulty": "Medium",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_001",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Algebraic Solution",
+    "difficulty": "Easy",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_002",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Elimination Method",
+    "difficulty": "Medium",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_003",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Substitution Method",
+    "difficulty": "Hard",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_004",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_005",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Algebraic Solution",
+    "difficulty": "Easy",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_006",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Elimination Method",
+    "difficulty": "Medium",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_007",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Substitution Method",
+    "difficulty": "Hard",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_008",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_009",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Algebraic Solution",
+    "difficulty": "Easy",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_010",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Elimination Method",
+    "difficulty": "Medium",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_011",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Substitution Method",
+    "difficulty": "Hard",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_012",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_013",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Algebraic Solution",
+    "difficulty": "Easy",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_014",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Elimination Method",
+    "difficulty": "Medium",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_015",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Substitution Method",
+    "difficulty": "Hard",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_016",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_001",
+    "chapter": "Quadratic Equations",
+    "topic": "Nature of Roots",
+    "difficulty": "Easy",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_002",
+    "chapter": "Quadratic Equations",
+    "topic": "Quadratic Formula",
+    "difficulty": "Medium",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_003",
+    "chapter": "Quadratic Equations",
+    "topic": "Factorization Method",
+    "difficulty": "Hard",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_004",
+    "chapter": "Quadratic Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_005",
+    "chapter": "Quadratic Equations",
+    "topic": "Nature of Roots",
+    "difficulty": "Easy",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_006",
+    "chapter": "Quadratic Equations",
+    "topic": "Quadratic Formula",
+    "difficulty": "Medium",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_007",
+    "chapter": "Quadratic Equations",
+    "topic": "Factorization Method",
+    "difficulty": "Hard",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_008",
+    "chapter": "Quadratic Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_009",
+    "chapter": "Quadratic Equations",
+    "topic": "Nature of Roots",
+    "difficulty": "Easy",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_010",
+    "chapter": "Quadratic Equations",
+    "topic": "Quadratic Formula",
+    "difficulty": "Medium",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_011",
+    "chapter": "Quadratic Equations",
+    "topic": "Factorization Method",
+    "difficulty": "Hard",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_012",
+    "chapter": "Quadratic Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_013",
+    "chapter": "Quadratic Equations",
+    "topic": "Nature of Roots",
+    "difficulty": "Easy",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_014",
+    "chapter": "Quadratic Equations",
+    "topic": "Quadratic Formula",
+    "difficulty": "Medium",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_015",
+    "chapter": "Quadratic Equations",
+    "topic": "Factorization Method",
+    "difficulty": "Hard",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_016",
+    "chapter": "Quadratic Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_001",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Nth Term",
+    "difficulty": "Easy",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_002",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Sum of N Terms",
+    "difficulty": "Medium",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_003",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Find Common Difference",
+    "difficulty": "Hard",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_004",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Daily Life Word Problems",
+    "difficulty": "Medium",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_005",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Nth Term",
+    "difficulty": "Easy",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_006",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Sum of N Terms",
+    "difficulty": "Medium",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_007",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Find Common Difference",
+    "difficulty": "Hard",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_008",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Daily Life Word Problems",
+    "difficulty": "Medium",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_009",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Nth Term",
+    "difficulty": "Easy",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_010",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Sum of N Terms",
+    "difficulty": "Medium",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_011",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Find Common Difference",
+    "difficulty": "Hard",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_012",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Daily Life Word Problems",
+    "difficulty": "Medium",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_013",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Nth Term",
+    "difficulty": "Easy",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_014",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Sum of N Terms",
+    "difficulty": "Medium",
+    "template": "Find the sum of first {n} terms of AP with first term {a} and difference {d}.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 30)"
+    },
+    "solver_code": "return round((n/2) * (2*a + (n - 1)*d), 2)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_015",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Find Common Difference",
+    "difficulty": "Hard",
+    "template": "The nth term of an AP is {tn} for n={n} and first term is {a}. Find d.",
+    "variables": {
+      "tn": "random.randint(20, 200)",
+      "n": "random.randint(4, 20)",
+      "a": "random.randint(1, 20)"
+    },
+    "solver_code": "return round((tn - a)/(n - 1), 3)"
+  },
+  {
+    "pattern_id": "cbse10_arithmetic_progressions_016",
+    "chapter": "Arithmetic Progressions",
+    "topic": "Daily Life Word Problems",
+    "difficulty": "Medium",
+    "template": "In an AP with first term {a} and common difference {d}, find the {n}th term.",
+    "variables": {
+      "a": "random.randint(1, 20)",
+      "d": "random.randint(1, 10)",
+      "n": "random.randint(5, 40)"
+    },
+    "solver_code": "return a + (n - 1)*d"
+  },
+  {
+    "pattern_id": "cbse10_triangles_001",
+    "chapter": "Triangles",
+    "topic": "Basic Proportionality Theorem",
+    "difficulty": "Easy",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_002",
+    "chapter": "Triangles",
+    "topic": "Similarity Criteria",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_003",
+    "chapter": "Triangles",
+    "topic": "Area Ratios",
+    "difficulty": "Hard",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_004",
+    "chapter": "Triangles",
+    "topic": "Pythagoras Applications",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_005",
+    "chapter": "Triangles",
+    "topic": "Basic Proportionality Theorem",
+    "difficulty": "Easy",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_006",
+    "chapter": "Triangles",
+    "topic": "Similarity Criteria",
+    "difficulty": "Medium",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_007",
+    "chapter": "Triangles",
+    "topic": "Area Ratios",
+    "difficulty": "Hard",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_008",
+    "chapter": "Triangles",
+    "topic": "Pythagoras Applications",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_009",
+    "chapter": "Triangles",
+    "topic": "Basic Proportionality Theorem",
+    "difficulty": "Easy",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_010",
+    "chapter": "Triangles",
+    "topic": "Similarity Criteria",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_011",
+    "chapter": "Triangles",
+    "topic": "Area Ratios",
+    "difficulty": "Hard",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_012",
+    "chapter": "Triangles",
+    "topic": "Pythagoras Applications",
+    "difficulty": "Medium",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_013",
+    "chapter": "Triangles",
+    "topic": "Basic Proportionality Theorem",
+    "difficulty": "Easy",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_triangles_014",
+    "chapter": "Triangles",
+    "topic": "Similarity Criteria",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_015",
+    "chapter": "Triangles",
+    "topic": "Area Ratios",
+    "difficulty": "Hard",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_triangles_016",
+    "chapter": "Triangles",
+    "topic": "Pythagoras Applications",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_001",
+    "chapter": "Coordinate Geometry",
+    "topic": "Distance Formula",
+    "difficulty": "Easy",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_002",
+    "chapter": "Coordinate Geometry",
+    "topic": "Section Formula",
+    "difficulty": "Medium",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_003",
+    "chapter": "Coordinate Geometry",
+    "topic": "Midpoint Formula",
+    "difficulty": "Hard",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_004",
+    "chapter": "Coordinate Geometry",
+    "topic": "Area of Triangle",
+    "difficulty": "Medium",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_005",
+    "chapter": "Coordinate Geometry",
+    "topic": "Distance Formula",
+    "difficulty": "Easy",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_006",
+    "chapter": "Coordinate Geometry",
+    "topic": "Section Formula",
+    "difficulty": "Medium",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_007",
+    "chapter": "Coordinate Geometry",
+    "topic": "Midpoint Formula",
+    "difficulty": "Hard",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_008",
+    "chapter": "Coordinate Geometry",
+    "topic": "Area of Triangle",
+    "difficulty": "Medium",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_009",
+    "chapter": "Coordinate Geometry",
+    "topic": "Distance Formula",
+    "difficulty": "Easy",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_010",
+    "chapter": "Coordinate Geometry",
+    "topic": "Section Formula",
+    "difficulty": "Medium",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_011",
+    "chapter": "Coordinate Geometry",
+    "topic": "Midpoint Formula",
+    "difficulty": "Hard",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_012",
+    "chapter": "Coordinate Geometry",
+    "topic": "Area of Triangle",
+    "difficulty": "Medium",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_013",
+    "chapter": "Coordinate Geometry",
+    "topic": "Distance Formula",
+    "difficulty": "Easy",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_014",
+    "chapter": "Coordinate Geometry",
+    "topic": "Section Formula",
+    "difficulty": "Medium",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_015",
+    "chapter": "Coordinate Geometry",
+    "topic": "Midpoint Formula",
+    "difficulty": "Hard",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_016",
+    "chapter": "Coordinate Geometry",
+    "topic": "Area of Triangle",
+    "difficulty": "Medium",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_001",
+    "chapter": "Trigonometry",
+    "topic": "Trigonometric Ratios",
+    "difficulty": "Easy",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_002",
+    "chapter": "Trigonometry",
+    "topic": "Values at Standard Angles",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_003",
+    "chapter": "Trigonometry",
+    "topic": "Identities",
+    "difficulty": "Hard",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_004",
+    "chapter": "Trigonometry",
+    "topic": "Complementary Angles",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_005",
+    "chapter": "Trigonometry",
+    "topic": "Trigonometric Ratios",
+    "difficulty": "Easy",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_006",
+    "chapter": "Trigonometry",
+    "topic": "Values at Standard Angles",
+    "difficulty": "Medium",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_007",
+    "chapter": "Trigonometry",
+    "topic": "Identities",
+    "difficulty": "Hard",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_008",
+    "chapter": "Trigonometry",
+    "topic": "Complementary Angles",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_009",
+    "chapter": "Trigonometry",
+    "topic": "Trigonometric Ratios",
+    "difficulty": "Easy",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_010",
+    "chapter": "Trigonometry",
+    "topic": "Values at Standard Angles",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_011",
+    "chapter": "Trigonometry",
+    "topic": "Identities",
+    "difficulty": "Hard",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_012",
+    "chapter": "Trigonometry",
+    "topic": "Complementary Angles",
+    "difficulty": "Medium",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_013",
+    "chapter": "Trigonometry",
+    "topic": "Trigonometric Ratios",
+    "difficulty": "Easy",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_014",
+    "chapter": "Trigonometry",
+    "topic": "Values at Standard Angles",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_015",
+    "chapter": "Trigonometry",
+    "topic": "Identities",
+    "difficulty": "Hard",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_016",
+    "chapter": "Trigonometry",
+    "topic": "Complementary Angles",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_001",
+    "chapter": "Applications of Trig",
+    "topic": "Heights and Distances",
+    "difficulty": "Easy",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_002",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Elevation",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_003",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Depression",
+    "difficulty": "Hard",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_004",
+    "chapter": "Applications of Trig",
+    "topic": "Two-Observation Problems",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_005",
+    "chapter": "Applications of Trig",
+    "topic": "Heights and Distances",
+    "difficulty": "Easy",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_006",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Elevation",
+    "difficulty": "Medium",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_007",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Depression",
+    "difficulty": "Hard",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_008",
+    "chapter": "Applications of Trig",
+    "topic": "Two-Observation Problems",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_009",
+    "chapter": "Applications of Trig",
+    "topic": "Heights and Distances",
+    "difficulty": "Easy",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_010",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Elevation",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_011",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Depression",
+    "difficulty": "Hard",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_012",
+    "chapter": "Applications of Trig",
+    "topic": "Two-Observation Problems",
+    "difficulty": "Medium",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_013",
+    "chapter": "Applications of Trig",
+    "topic": "Heights and Distances",
+    "difficulty": "Easy",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_014",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Elevation",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_015",
+    "chapter": "Applications of Trig",
+    "topic": "Angle of Depression",
+    "difficulty": "Hard",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_applications_of_trig_016",
+    "chapter": "Applications of Trig",
+    "topic": "Two-Observation Problems",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_001",
+    "chapter": "Circles",
+    "topic": "Tangent Theorem",
+    "difficulty": "Easy",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_circles_002",
+    "chapter": "Circles",
+    "topic": "Equal Tangents",
+    "difficulty": "Medium",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_003",
+    "chapter": "Circles",
+    "topic": "Radius-Perpendicular Property",
+    "difficulty": "Hard",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_004",
+    "chapter": "Circles",
+    "topic": "Chord-Tangent Relationships",
+    "difficulty": "Medium",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_circles_005",
+    "chapter": "Circles",
+    "topic": "Tangent Theorem",
+    "difficulty": "Easy",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_006",
+    "chapter": "Circles",
+    "topic": "Equal Tangents",
+    "difficulty": "Medium",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_007",
+    "chapter": "Circles",
+    "topic": "Radius-Perpendicular Property",
+    "difficulty": "Hard",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_circles_008",
+    "chapter": "Circles",
+    "topic": "Chord-Tangent Relationships",
+    "difficulty": "Medium",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_009",
+    "chapter": "Circles",
+    "topic": "Tangent Theorem",
+    "difficulty": "Easy",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_010",
+    "chapter": "Circles",
+    "topic": "Equal Tangents",
+    "difficulty": "Medium",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_circles_011",
+    "chapter": "Circles",
+    "topic": "Radius-Perpendicular Property",
+    "difficulty": "Hard",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_012",
+    "chapter": "Circles",
+    "topic": "Chord-Tangent Relationships",
+    "difficulty": "Medium",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_013",
+    "chapter": "Circles",
+    "topic": "Tangent Theorem",
+    "difficulty": "Easy",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_circles_014",
+    "chapter": "Circles",
+    "topic": "Equal Tangents",
+    "difficulty": "Medium",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_015",
+    "chapter": "Circles",
+    "topic": "Radius-Perpendicular Property",
+    "difficulty": "Hard",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_circles_016",
+    "chapter": "Circles",
+    "topic": "Chord-Tangent Relationships",
+    "difficulty": "Medium",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_constructions_001",
+    "chapter": "Constructions",
+    "topic": "Division of Line Segment",
+    "difficulty": "Easy",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_002",
+    "chapter": "Constructions",
+    "topic": "Tangent from External Point",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_003",
+    "chapter": "Constructions",
+    "topic": "Similar Triangle Construction",
+    "difficulty": "Hard",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_004",
+    "chapter": "Constructions",
+    "topic": "Scale Factor Construction",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_005",
+    "chapter": "Constructions",
+    "topic": "Division of Line Segment",
+    "difficulty": "Easy",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_006",
+    "chapter": "Constructions",
+    "topic": "Tangent from External Point",
+    "difficulty": "Medium",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_007",
+    "chapter": "Constructions",
+    "topic": "Similar Triangle Construction",
+    "difficulty": "Hard",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_008",
+    "chapter": "Constructions",
+    "topic": "Scale Factor Construction",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_009",
+    "chapter": "Constructions",
+    "topic": "Division of Line Segment",
+    "difficulty": "Easy",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_010",
+    "chapter": "Constructions",
+    "topic": "Tangent from External Point",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_011",
+    "chapter": "Constructions",
+    "topic": "Similar Triangle Construction",
+    "difficulty": "Hard",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_012",
+    "chapter": "Constructions",
+    "topic": "Scale Factor Construction",
+    "difficulty": "Medium",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_013",
+    "chapter": "Constructions",
+    "topic": "Division of Line Segment",
+    "difficulty": "Easy",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_constructions_014",
+    "chapter": "Constructions",
+    "topic": "Tangent from External Point",
+    "difficulty": "Medium",
+    "template": "Two similar triangles have corresponding sides in ratio {k}. Find area ratio.",
+    "variables": {
+      "k": "random.randint(2, 12)"
+    },
+    "solver_code": "return k**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_015",
+    "chapter": "Constructions",
+    "topic": "Similar Triangle Construction",
+    "difficulty": "Hard",
+    "template": "If perimeter of a square is {perimeter}, find area.",
+    "variables": {
+      "perimeter": "random.randint(16, 200)"
+    },
+    "solver_code": "side = perimeter / 4; return side**2"
+  },
+  {
+    "pattern_id": "cbse10_constructions_016",
+    "chapter": "Constructions",
+    "topic": "Scale Factor Construction",
+    "difficulty": "Medium",
+    "template": "A right triangle has legs {p} and {q}. Find hypotenuse.",
+    "variables": {
+      "p": "random.randint(3, 30)",
+      "q": "random.randint(4, 30)"
+    },
+    "solver_code": "return round(math.sqrt(p**2 + q**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_001",
+    "chapter": "Areas Related to Circles",
+    "topic": "Sector Area",
+    "difficulty": "Easy",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_002",
+    "chapter": "Areas Related to Circles",
+    "topic": "Arc Length",
+    "difficulty": "Medium",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_003",
+    "chapter": "Areas Related to Circles",
+    "topic": "Segment Area",
+    "difficulty": "Hard",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_004",
+    "chapter": "Areas Related to Circles",
+    "topic": "Combined Figures",
+    "difficulty": "Medium",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_005",
+    "chapter": "Areas Related to Circles",
+    "topic": "Sector Area",
+    "difficulty": "Easy",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_006",
+    "chapter": "Areas Related to Circles",
+    "topic": "Arc Length",
+    "difficulty": "Medium",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_007",
+    "chapter": "Areas Related to Circles",
+    "topic": "Segment Area",
+    "difficulty": "Hard",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_008",
+    "chapter": "Areas Related to Circles",
+    "topic": "Combined Figures",
+    "difficulty": "Medium",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_009",
+    "chapter": "Areas Related to Circles",
+    "topic": "Sector Area",
+    "difficulty": "Easy",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_010",
+    "chapter": "Areas Related to Circles",
+    "topic": "Arc Length",
+    "difficulty": "Medium",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_011",
+    "chapter": "Areas Related to Circles",
+    "topic": "Segment Area",
+    "difficulty": "Hard",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_012",
+    "chapter": "Areas Related to Circles",
+    "topic": "Combined Figures",
+    "difficulty": "Medium",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_013",
+    "chapter": "Areas Related to Circles",
+    "topic": "Sector Area",
+    "difficulty": "Easy",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_014",
+    "chapter": "Areas Related to Circles",
+    "topic": "Arc Length",
+    "difficulty": "Medium",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_015",
+    "chapter": "Areas Related to Circles",
+    "topic": "Segment Area",
+    "difficulty": "Hard",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_016",
+    "chapter": "Areas Related to Circles",
+    "topic": "Combined Figures",
+    "difficulty": "Medium",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_001",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Cone and Cylinder",
+    "difficulty": "Easy",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_002",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Sphere and Hemisphere",
+    "difficulty": "Medium",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_003",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Frustum",
+    "difficulty": "Hard",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_004",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Composite Solids",
+    "difficulty": "Medium",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_005",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Cone and Cylinder",
+    "difficulty": "Easy",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_006",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Sphere and Hemisphere",
+    "difficulty": "Medium",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_007",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Frustum",
+    "difficulty": "Hard",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_008",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Composite Solids",
+    "difficulty": "Medium",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_009",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Cone and Cylinder",
+    "difficulty": "Easy",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_010",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Sphere and Hemisphere",
+    "difficulty": "Medium",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_011",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Frustum",
+    "difficulty": "Hard",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_012",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Composite Solids",
+    "difficulty": "Medium",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_013",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Cone and Cylinder",
+    "difficulty": "Easy",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_014",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Sphere and Hemisphere",
+    "difficulty": "Medium",
+    "template": "Find arc length for radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * 2*math.pi*r, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_015",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Frustum",
+    "difficulty": "Hard",
+    "template": "A cylinder has radius {r} cm and height {h} cm. Find volume.",
+    "variables": {
+      "r": "random.randint(2, 20)",
+      "h": "random.randint(5, 40)"
+    },
+    "solver_code": "return round(math.pi * (r**2) * h, 3)"
+  },
+  {
+    "pattern_id": "cbse10_surface_areas_volumes_016",
+    "chapter": "Surface Areas & Volumes",
+    "topic": "Composite Solids",
+    "difficulty": "Medium",
+    "template": "Find area of sector of radius {r} cm and angle {theta} deg.",
+    "variables": {
+      "r": "random.randint(4, 30)",
+      "theta": "random.choice([30, 45, 60, 90, 120, 180])"
+    },
+    "solver_code": "return round((theta/360) * math.pi * (r**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_001",
+    "chapter": "Statistics",
+    "topic": "Mean from Frequency Table",
+    "difficulty": "Easy",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_002",
+    "chapter": "Statistics",
+    "topic": "Median of Grouped Data",
+    "difficulty": "Medium",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_003",
+    "chapter": "Statistics",
+    "topic": "Mode of Grouped Data",
+    "difficulty": "Hard",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_004",
+    "chapter": "Statistics",
+    "topic": "Cumulative Frequency",
+    "difficulty": "Medium",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_005",
+    "chapter": "Statistics",
+    "topic": "Mean from Frequency Table",
+    "difficulty": "Easy",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_006",
+    "chapter": "Statistics",
+    "topic": "Median of Grouped Data",
+    "difficulty": "Medium",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_007",
+    "chapter": "Statistics",
+    "topic": "Mode of Grouped Data",
+    "difficulty": "Hard",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_008",
+    "chapter": "Statistics",
+    "topic": "Cumulative Frequency",
+    "difficulty": "Medium",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_009",
+    "chapter": "Statistics",
+    "topic": "Mean from Frequency Table",
+    "difficulty": "Easy",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_010",
+    "chapter": "Statistics",
+    "topic": "Median of Grouped Data",
+    "difficulty": "Medium",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_011",
+    "chapter": "Statistics",
+    "topic": "Mode of Grouped Data",
+    "difficulty": "Hard",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_012",
+    "chapter": "Statistics",
+    "topic": "Cumulative Frequency",
+    "difficulty": "Medium",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_013",
+    "chapter": "Statistics",
+    "topic": "Mean from Frequency Table",
+    "difficulty": "Easy",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_014",
+    "chapter": "Statistics",
+    "topic": "Median of Grouped Data",
+    "difficulty": "Medium",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_015",
+    "chapter": "Statistics",
+    "topic": "Mode of Grouped Data",
+    "difficulty": "Hard",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_016",
+    "chapter": "Statistics",
+    "topic": "Cumulative Frequency",
+    "difficulty": "Medium",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_probability_001",
+    "chapter": "Probability",
+    "topic": "Theoretical Probability",
+    "difficulty": "Easy",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_002",
+    "chapter": "Probability",
+    "topic": "Cards and Dice",
+    "difficulty": "Medium",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_003",
+    "chapter": "Probability",
+    "topic": "Complementary Events",
+    "difficulty": "Hard",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_004",
+    "chapter": "Probability",
+    "topic": "At Least One Event",
+    "difficulty": "Medium",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_005",
+    "chapter": "Probability",
+    "topic": "Theoretical Probability",
+    "difficulty": "Easy",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_006",
+    "chapter": "Probability",
+    "topic": "Cards and Dice",
+    "difficulty": "Medium",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_007",
+    "chapter": "Probability",
+    "topic": "Complementary Events",
+    "difficulty": "Hard",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_008",
+    "chapter": "Probability",
+    "topic": "At Least One Event",
+    "difficulty": "Medium",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_009",
+    "chapter": "Probability",
+    "topic": "Theoretical Probability",
+    "difficulty": "Easy",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_010",
+    "chapter": "Probability",
+    "topic": "Cards and Dice",
+    "difficulty": "Medium",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_011",
+    "chapter": "Probability",
+    "topic": "Complementary Events",
+    "difficulty": "Hard",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_012",
+    "chapter": "Probability",
+    "topic": "At Least One Event",
+    "difficulty": "Medium",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_013",
+    "chapter": "Probability",
+    "topic": "Theoretical Probability",
+    "difficulty": "Easy",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_014",
+    "chapter": "Probability",
+    "topic": "Cards and Dice",
+    "difficulty": "Medium",
+    "template": "Success probability in one trial is {p}. Find probability of at least one success in {n} trials.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5])",
+      "n": "random.randint(2, 6)"
+    },
+    "solver_code": "return round(1 - ((1 - p)**n), 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_015",
+    "chapter": "Probability",
+    "topic": "Complementary Events",
+    "difficulty": "Hard",
+    "template": "Probability of event A is {p}. Find probability of complement event A'.",
+    "variables": {
+      "p": "random.choice([0.1, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.75])"
+    },
+    "solver_code": "return round(1 - p, 4)"
+  },
+  {
+    "pattern_id": "cbse10_probability_016",
+    "chapter": "Probability",
+    "topic": "At Least One Event",
+    "difficulty": "Medium",
+    "template": "If favorable outcomes are {favorable} out of total {total}, find probability.",
+    "variables": {
+      "favorable": "random.randint(1, 10)",
+      "total": "random.randint(11, 30)"
+    },
+    "solver_code": "return round(favorable / total, 4)"
+  }
+]

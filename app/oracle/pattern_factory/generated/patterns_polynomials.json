@@ -1,0 +1,209 @@
+[
+  {
+    "pattern_id": "cbse10_polynomials_001",
+    "chapter": "Polynomials",
+    "topic": "Zeroes of Polynomial",
+    "difficulty": "Easy",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_002",
+    "chapter": "Polynomials",
+    "topic": "Relationship Between Coefficients and Roots",
+    "difficulty": "Medium",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_003",
+    "chapter": "Polynomials",
+    "topic": "Remainder Theorem",
+    "difficulty": "Hard",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_004",
+    "chapter": "Polynomials",
+    "topic": "Factor Theorem",
+    "difficulty": "Medium",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_005",
+    "chapter": "Polynomials",
+    "topic": "Zeroes of Polynomial",
+    "difficulty": "Easy",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_006",
+    "chapter": "Polynomials",
+    "topic": "Relationship Between Coefficients and Roots",
+    "difficulty": "Medium",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_007",
+    "chapter": "Polynomials",
+    "topic": "Remainder Theorem",
+    "difficulty": "Hard",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_008",
+    "chapter": "Polynomials",
+    "topic": "Factor Theorem",
+    "difficulty": "Medium",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_009",
+    "chapter": "Polynomials",
+    "topic": "Zeroes of Polynomial",
+    "difficulty": "Easy",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_010",
+    "chapter": "Polynomials",
+    "topic": "Relationship Between Coefficients and Roots",
+    "difficulty": "Medium",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_011",
+    "chapter": "Polynomials",
+    "topic": "Remainder Theorem",
+    "difficulty": "Hard",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_012",
+    "chapter": "Polynomials",
+    "topic": "Factor Theorem",
+    "difficulty": "Medium",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_013",
+    "chapter": "Polynomials",
+    "topic": "Zeroes of Polynomial",
+    "difficulty": "Easy",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_014",
+    "chapter": "Polynomials",
+    "topic": "Relationship Between Coefficients and Roots",
+    "difficulty": "Medium",
+    "template": "Evaluate polynomial P(x) = {a}x^2 + {b}x + {c} at x = {x}.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-20, 20)",
+      "x": "random.randint(-5, 5)"
+    },
+    "solver_code": "return a*(x**2) + b*x + c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_015",
+    "chapter": "Polynomials",
+    "topic": "Remainder Theorem",
+    "difficulty": "Hard",
+    "template": "For polynomial with coefficients a={a}, b={b}, c={c}, find discriminant.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "return b**2 - 4*a*c"
+  },
+  {
+    "pattern_id": "cbse10_polynomials_016",
+    "chapter": "Polynomials",
+    "topic": "Factor Theorem",
+    "difficulty": "Medium",
+    "template": "If roots of a quadratic are {r1} and {r2}, find sum and product of roots.",
+    "variables": {
+      "r1": "random.randint(-10, 10)",
+      "r2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return {'sum': r1 + r2, 'product': r1 * r2}"
+  }
+]

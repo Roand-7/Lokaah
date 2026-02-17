@@ -1,0 +1,236 @@
+[
+  {
+    "pattern_id": "cbse10_coordinate_geometry_001",
+    "chapter": "Coordinate Geometry",
+    "topic": "Distance Formula",
+    "difficulty": "Easy",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_002",
+    "chapter": "Coordinate Geometry",
+    "topic": "Section Formula",
+    "difficulty": "Medium",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_003",
+    "chapter": "Coordinate Geometry",
+    "topic": "Midpoint Formula",
+    "difficulty": "Hard",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_004",
+    "chapter": "Coordinate Geometry",
+    "topic": "Area of Triangle",
+    "difficulty": "Medium",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_005",
+    "chapter": "Coordinate Geometry",
+    "topic": "Distance Formula",
+    "difficulty": "Easy",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_006",
+    "chapter": "Coordinate Geometry",
+    "topic": "Section Formula",
+    "difficulty": "Medium",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_007",
+    "chapter": "Coordinate Geometry",
+    "topic": "Midpoint Formula",
+    "difficulty": "Hard",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_008",
+    "chapter": "Coordinate Geometry",
+    "topic": "Area of Triangle",
+    "difficulty": "Medium",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_009",
+    "chapter": "Coordinate Geometry",
+    "topic": "Distance Formula",
+    "difficulty": "Easy",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_010",
+    "chapter": "Coordinate Geometry",
+    "topic": "Section Formula",
+    "difficulty": "Medium",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_011",
+    "chapter": "Coordinate Geometry",
+    "topic": "Midpoint Formula",
+    "difficulty": "Hard",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_012",
+    "chapter": "Coordinate Geometry",
+    "topic": "Area of Triangle",
+    "difficulty": "Medium",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_013",
+    "chapter": "Coordinate Geometry",
+    "topic": "Distance Formula",
+    "difficulty": "Easy",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_014",
+    "chapter": "Coordinate Geometry",
+    "topic": "Section Formula",
+    "difficulty": "Medium",
+    "template": "Find distance between points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-10, 10)",
+      "y1": "random.randint(-10, 10)",
+      "x2": "random.randint(-10, 10)",
+      "y2": "random.randint(-10, 10)"
+    },
+    "solver_code": "return round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 3)"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_015",
+    "chapter": "Coordinate Geometry",
+    "topic": "Midpoint Formula",
+    "difficulty": "Hard",
+    "template": "Find coordinates dividing segment joining ({x1}, {y1}) and ({x2}, {y2}) in ratio {m}:{n}.",
+    "variables": {
+      "x1": "random.randint(-12, 12)",
+      "y1": "random.randint(-12, 12)",
+      "x2": "random.randint(-12, 12)",
+      "y2": "random.randint(-12, 12)",
+      "m": "random.randint(1, 6)",
+      "n": "random.randint(1, 6)"
+    },
+    "solver_code": "x = (m*x2 + n*x1)/(m+n); y = (m*y2 + n*y1)/(m+n); return {'x': round(x, 3), 'y': round(y, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_coordinate_geometry_016",
+    "chapter": "Coordinate Geometry",
+    "topic": "Area of Triangle",
+    "difficulty": "Medium",
+    "template": "Find midpoint of points ({x1}, {y1}) and ({x2}, {y2}).",
+    "variables": {
+      "x1": "random.randint(-15, 15)",
+      "y1": "random.randint(-15, 15)",
+      "x2": "random.randint(-15, 15)",
+      "y2": "random.randint(-15, 15)"
+    },
+    "solver_code": "return {'x': (x1 + x2)/2, 'y': (y1 + y2)/2}"
+  }
+]

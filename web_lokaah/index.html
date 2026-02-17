@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOKAAH â€” Learn Smarter, Not Harder</title>
+    <meta name="description" content="The adaptive learning platform that understands YOU. Personalized questions, visual explanations, and real progress â€” starting with high school mathematics.">
+
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="LOKAAH â€” Learn Smarter, Not Harder">
+    <meta property="og:description" content="The adaptive learning platform that understands YOU. Personalized questions. Visual explanations. Real progress.">
+    <!-- <meta property="og:image" content="images/og-image.png"> -->
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LOKAAH â€" Learn Smarter, Not Harder">
+    <meta name="twitter:description" content="Education that adapts to you. Personalized questions, interactive diagrams, and guided discovery.">
+    <!-- <meta name="twitter:image" content="images/og-image.png"> -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">L</div>
+                <span class="logo-text">L O K A A H</span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How it Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            
+            <div class="nav-actions">
+                <a href="app.html" class="btn btn-secondary hidden-mobile">Sign In</a>
+                <a href="app.html" class="btn btn-primary">Get Started Free</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-up">
+                    <span class="badge-icon">ðŸ‡®ðŸ‡³</span>
+                    <span>Built for Indian Students</span>
+                </div>
+                
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    Learn Smarter,
+                    <span class="gradient-text">Not Harder</span>
+                </h1>
+                
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    One chat. Infinite learning skills.
+                    LOKAAH routes between teaching, challenge, planning, and wellbeing in real time.
+                </p>
+
+                <p class="hero-note" data-aos="fade-up" data-aos-delay="250">
+                    Built for Class 10 launch speed: simple UI for students, smart multi-agent brain in the backend.
+                </p>
+                
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                    <a href="app.html" class="btn btn-large btn-primary">
+                        <span>Start Your Journey</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#features" class="btn btn-large btn-glass">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>See Features</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="500">
+                <div class="chat-preview">
+                    <div class="chat-header-preview">
+                        <div class="chat-avatar-preview">
+                            <span>AI</span>
+                        </div>
+                        <div class="chat-info">
+                            <div class="chat-name">LOKAAH AI</div>
+                            <div class="chat-status">Single chat. Multi-agent brain.</div>
+                        </div>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message message-bot">
+                            <div class="message-bubble">
+                                LOKAAH AI: Tell me what feels hardest right now.
+                            </div>
+                        </div>
+                        <div class="message message-user">
+                            <div class="message-bubble">
+                                I am failing trigonometry and I feel anxious.
+                            </div>
+                        </div>
+                        <div class="message message-bot">
+                            <div class="message-bubble">
+                                PULSE: Breathe. You are not behind forever.
+                            </div>
+                        </div>
+                        <div class="message message-bot">
+                            <div class="message-bubble">
+                                VEDA: Great. Start with tan(theta) = opposite / adjacent.
+                            </div>
+                        </div>
+                        <div class="message message-bot">
+                            <div class="message-bubble">
+                                ORACLE: Challenge unlocked. 5-mark CBSE question incoming.
+                            </div>
+                        </div>
+                        <div class="message message-bot typing">
+                            <div class="typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is LOKAAH Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content" data-aos="fade-up">
+                <span class="section-badge">Our Philosophy</span>
+                <h2 class="about-title">LOKAAH isn't just another ed-tech app.<br>It's a new way to learn.</h2>
+                <div class="about-text">
+                    <p>We believe every student learns differently. Some need visual diagrams. Others need step-by-step guidance. Some grasp concepts instantly, while others need more practice.</p>
+                    <p>Our AI understands your learning style and adapts in real-time â€” giving you exactly what you need, when you need it.</p>
+                    <p class="about-highlight">Starting with high school mathematics, we're building the future of personalized education.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Features</span>
+                <h2 class="section-title">Everything you need to master your studies</h2>
+                <p class="section-subtitle">
+                    From personalized practice to interactive visuals, LOKAAH adapts to how you learn best.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="feature-title">Personalized Practice</h3>
+                    <p class="feature-desc">
+                        No two students get the same question. Our AI generates infinite variations based on your progress and learning gaps.
+                    </p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shapes"></i>
+                    </div>
+                    <h3 class="feature-title">Visual Learning</h3>
+                    <p class="feature-desc">
+                        Drag, drop, and interact with mathematical concepts through interactive diagrams. See geometry come to life.
+                    </p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="feature-title">Guided Discovery</h3>
+                    <p class="feature-desc">
+                        Not just answers â€” guided discovery. Learn problem-solving and critical thinking, not memorization.
+                    </p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Real-Time Adaptation</h3>
+                    <p class="feature-desc">
+                        Stuck on a concept? We break it down. Crushing it? We level up. The difficulty grows with you.
+                    </p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3 class="feature-title">Step-by-Step Accuracy</h3>
+                    <p class="feature-desc">
+                        Every solution is mathematically verified. No guesses, no hallucinations â€” just reliable, step-by-step answers.
+                    </p>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Learn Anywhere</h3>
+                    <p class="feature-desc">
+                        Works seamlessly on phone, tablet, and web. Your progress syncs across all devices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why LOKAAH</span>
+                <h2 class="section-title">Not your typical learning app</h2>
+            </div>
+            
+            <div class="comparison-grid" data-aos="fade-up">
+                <div class="comparison-card comparison-old">
+                    <h3 class="comparison-label">Traditional Apps</h3>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-times"></i> Same questions for everyone</li>
+                        <li><i class="fas fa-times"></i> Static video lectures</li>
+                        <li><i class="fas fa-times"></i> One-size-fits-all approach</li>
+                        <li><i class="fas fa-times"></i> Boring textbook problems</li>
+                        <li><i class="fas fa-times"></i> Only answers, no understanding</li>
+                    </ul>
+                </div>
+                <div class="comparison-card comparison-new">
+                    <h3 class="comparison-label">LOKAAH</h3>
+                    <ul class="comparison-list">
+                        <li><i class="fas fa-check"></i> Questions tailored to <strong>you</strong></li>
+                        <li><i class="fas fa-check"></i> Interactive visualizations</li>
+                        <li><i class="fas fa-check"></i> Adapts to your pace</li>
+                        <li><i class="fas fa-check"></i> Engaging, contextual problems</li>
+                        <li><i class="fas fa-check"></i> Guided discovery &amp; deep learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">How it Works</span>
+                <h2 class="section-title">Your path to mastery in 4 steps</h2>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Practice</h3>
+                        <p>Get unlimited unique questions tailored to your level. Just ask naturally â€” type your doubt or pick a topic.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="step-card">
+                            <i class="fas fa-pen-fancy"></i>
+                            <span>"I need help with trigonometry"</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step step-reverse" data-aos="fade-left">
+                    <div class="step-visual">
+                        <div class="step-card">
+                            <i class="fas fa-shapes"></i>
+                            <span>Interactive diagrams &amp; visuals</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Visualize</h3>
+                        <p>Interactive diagrams make abstract concepts concrete. Drag points, change angles, and see math come alive.</p>
+                    </div>
+                    <div class="step-number">02</div>
+                </div>
+                
+                <div class="step" data-aos="fade-right">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Learn</h3>
+                        <p>Guided discovery helps you understand the "why" behind every formula. We don't just give answers â€” we help you find them.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="step-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Discover answers yourself</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="step step-reverse" data-aos="fade-left">
+                    <div class="step-visual">
+                        <div class="step-card">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Watch your scores improve</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Master</h3>
+                        <p>Adaptive difficulty grows with you. Track your progress, identify weak areas, and watch your confidence soar.</p>
+                    </div>
+                    <div class="step-number">04</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Coverage</span>
+                <h2 class="section-title">Starting with high school mathematics</h2>
+                <p class="section-subtitle">Expanding to more subjects soon</p>
+            </div>
+            
+            <div class="subjects-grid">
+                <div class="subject-card" data-aos="zoom-in">
+                    <div class="subject-icon">ðŸ“</div>
+                    <h3>Trigonometry</h3>
+                    <p>Heights &amp; Distances, Identities</p>
+                </div>
+                
+                <div class="subject-card" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="subject-icon">ðŸ“Š</div>
+                    <h3>Algebra</h3>
+                    <p>Quadratic Equations, Progressions</p>
+                </div>
+                
+                <div class="subject-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="subject-icon">ðŸ“</div>
+                    <h3>Geometry</h3>
+                    <p>Triangles, Circles, Constructions</p>
+                </div>
+                
+                <div class="subject-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="subject-icon">ðŸŽ¯</div>
+                    <h3>Probability</h3>
+                    <p>Basic Probability, Statistics</p>
+                </div>
+                
+                <div class="subject-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="subject-icon">ðŸ“ˆ</div>
+                    <h3>Coordinate Geometry</h3>
+                    <p>Lines, Distance Formula</p>
+                </div>
+                
+                <div class="subject-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="subject-icon">ðŸ”¢</div>
+                    <h3>Number Systems</h3>
+                    <p>Real Numbers, Polynomials</p>
+                </div>
+            </div>
+
+            <!-- Roadmap -->
+            <div class="roadmap" data-aos="fade-up">
+                <h3 class="roadmap-title">Our Roadmap</h3>
+                <div class="roadmap-steps">
+                    <div class="roadmap-step active">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-label">Now</div>
+                        <div class="roadmap-desc">High School Mathematics (Class 10)</div>
+                    </div>
+                    <div class="roadmap-line"></div>
+                    <div class="roadmap-step">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-label">Next</div>
+                        <div class="roadmap-desc">Class 9 &amp; 11 Mathematics</div>
+                    </div>
+                    <div class="roadmap-line"></div>
+                    <div class="roadmap-step">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-label">Soon</div>
+                        <div class="roadmap-desc">Physics &amp; Chemistry</div>
+                    </div>
+                    <div class="roadmap-line"></div>
+                    <div class="roadmap-step">
+                        <div class="roadmap-dot"></div>
+                        <div class="roadmap-label">Vision</div>
+                        <div class="roadmap-desc">Personalized education for every learner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Pricing</span>
+                <h2 class="section-title">Simple, transparent pricing</h2>
+                <p class="section-subtitle">Start free, upgrade when you're ready</p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <span class="toggle-label active">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label">Yearly <span class="save-badge">Save 40%</span></span>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Explorer</h3>
+                        <p class="pricing-desc">Perfect for getting started</p>
+                        <div class="pricing-price">
+                            <span class="currency">â‚¹</span>
+                            <span class="amount">0</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 50 personalized questions per day</li>
+                        <li><i class="fas fa-check"></i> Guided problem-solving</li>
+                        <li><i class="fas fa-check"></i> 3 topics</li>
+                        <li><i class="fas fa-check"></i> Basic progress tracking</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Interactive diagrams</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Parent insights</li>
+                    </ul>
+                    <a href="app.html" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured coming-soon" data-aos="fade-up" data-aos-delay="100">
+                    <div class="popular-badge">Coming Soon</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Pro Learner</h3>
+                        <p class="pricing-desc">Go deeper with unlimited practice</p>
+                        <div class="pricing-price">
+                            <span class="currency">â‚¹</span>
+                            <span class="amount" data-monthly="299" data-yearly="199">299</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited personalized questions</li>
+                        <li><i class="fas fa-check"></i> Full guided discovery</li>
+                        <li><i class="fas fa-check"></i> All chapters &amp; topics</li>
+                        <li><i class="fas fa-check"></i> Advanced progress insights</li>
+                        <li><i class="fas fa-check"></i> Interactive diagrams</li>
+                        <li><i class="fas fa-check"></i> Parent insights dashboard</li>
+                    </ul>
+                    <span class="btn btn-primary btn-block btn-disabled">Coming Soon</span>
+                </div>
+
+                <div class="pricing-card coming-soon" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Family</h3>
+                        <p class="pricing-desc">Learning together, growing together</p>
+                        <div class="pricing-price">
+                            <span class="currency">â‚¹</span>
+                            <span class="amount" data-monthly="499" data-yearly="349">499</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Pro Learner</li>
+                        <li><i class="fas fa-check"></i> Up to 3 student accounts</li>
+                        <li><i class="fas fa-check"></i> Family progress dashboard</li>
+                        <li><i class="fas fa-check"></i> Shared subscription</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Personalized learning paths</li>
+                    </ul>
+                    <span class="btn btn-outline btn-block btn-disabled">Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Frequently asked questions</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What subjects does LOKAAH cover?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We're currently focused on Class 10 Mathematics â€” covering all chapters including 
+                        Real Numbers, Polynomials, Quadratic Equations, Arithmetic Progressions, Triangles, 
+                        Coordinate Geometry, Trigonometry, and more. We're expanding to Class 9, 11, and 
+                        other subjects like Physics and Chemistry soon.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How is LOKAAH different from other learning apps?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most apps give you the same questions and static videos. LOKAAH is different:
+                        <br>â€¢ Every question is uniquely generated for your level
+                        <br>â€¢ We guide you to discover answers, not just memorize them
+                        <br>â€¢ Comfortable in your language â€” speak your way
+                        <br>â€¢ Interactive diagrams bring geometry to life
+                        <br>â€¢ Every calculation is verified for step-by-step accuracy
+                        <br>â€¢ Questions use real Indian contexts you can relate to</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I use LOKAAH on my phone?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! LOKAAH works on any device with a web browser â€” phone, tablet,
+                        or computer. Just open the website and start learning. A dedicated mobile app
+                        is coming soon.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there a free plan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Our Explorer plan gives you 50 personalized questions per day â€” completely free, no credit card required. 
+                        You can upgrade to Pro Learner anytime for unlimited access and advanced features.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Will you expand to other classes and subjects?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We're starting with Class 10 Mathematics to perfect the experience. 
+                        Our roadmap includes Class 9 and 11 Math next, followed by Physics and Chemistry. 
+                        Our vision is personalized education for every learner, across every subject.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to learn smarter?</h2>
+                <p class="cta-subtitle">Join thousands of students who are discovering a better way to study</p>
+                <div class="cta-buttons">
+                    <a href="app.html" class="btn btn-large btn-white">
+                        <span>Start Your Journey</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <p class="cta-note">Free forever. No credit card required.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">L</div>
+                        <span class="logo-text">L O K A A H</span>
+                    </a>
+                    <p class="footer-tagline">Starting with Class 10 Mathematics. Building the future of education.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="app.html">Start Learning</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:hello@lokaah.com">hello@lokaah.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 LOKAAH. Made with â¤ï¸ in India for learners everywhere</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

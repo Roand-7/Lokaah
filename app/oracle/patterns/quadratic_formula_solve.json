@@ -1,0 +1,73 @@
+{
+  "pattern_id": "quadratic_formula_solve",
+  "topic": "Quadratic Equations",
+  "marks": 3,
+  "difficulty": 0.5,
+  "template_text": "Solve the quadratic equation {a}x² + ({b})x + ({c}) = 0 using the quadratic formula.",
+  "variables": {
+    "a": {
+      "type": "choice",
+      "choices": [1, 2]
+    },
+    "b": {
+      "type": "int",
+      "min": -10,
+      "max": 10
+    },
+    "c": {
+      "type": "int",
+      "min": -10,
+      "max": 10
+    },
+    "discriminant": {
+      "type": "calculated",
+      "formula": "({b})**2 - 4*{a}*{c}"
+    },
+    "sqrt_d": {
+      "type": "calculated",
+      "formula": "math.sqrt(abs({discriminant}))"
+    },
+    "root1": {
+      "type": "calculated",
+      "formula": "(-{b} + {sqrt_d}) / (2*{a})"
+    },
+    "root2": {
+      "type": "calculated",
+      "formula": "(-{b} - {sqrt_d}) / (2*{a})"
+    }
+  },
+  "solution_template": [
+    "Given: {a}x² + ({b})x + ({c}) = 0",
+    "Quadratic formula: x = [-b ± √(b² - 4ac)] / 2a",
+    "Here, a = {a}, b = {b}, c = {c}",
+    "Discriminant D = b² - 4ac = ({b})² - 4({a})({c})",
+    "D = {b**2} - {4*a*c} = {discriminant}",
+    "x = [-({b}) ± √{discriminant}] / 2({a})",
+    "x = [{-b} ± {sqrt_d:.2f}] / {2*a}",
+    "x = {root1:.2f} or x = {root2:.2f}"
+  ],
+  "answer_template": "x = {root1:.2f} or x = {root2:.2f}",
+  "validation_rules": [
+    "{discriminant} >= 0",
+    "{a} != 0"
+  ],
+  "socratic_hints": [
+    {
+      "level": 1,
+      "hint": "Which formula solves any quadratic equation?",
+      "nudge": "x = [-b ± √(b² - 4ac)] / 2a"
+    },
+    {
+      "level": 2,
+      "hint": "First calculate the discriminant with a={a}, b={b}, c={c}",
+      "nudge": "D = {b}² - 4×{a}×{c} = {discriminant}"
+    },
+    {
+      "level": 3,
+      "hint": "Substitute D={discriminant} into the formula",
+      "nudge": "x = [{-b} ± √{discriminant}] / {2*a}"
+    }
+  ],
+  "created_at": "2025-02-16T00:00:00",
+  "updated_at": "2025-02-16T00:00:00"
+}

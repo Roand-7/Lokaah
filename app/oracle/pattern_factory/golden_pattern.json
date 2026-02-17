@@ -1,0 +1,13 @@
+{
+  "pattern_id": "math_quad_nature_roots",
+  "chapter": "Quadratic Equations",
+  "topic": "Nature of Roots",
+  "difficulty": "Medium",
+  "template": "Find the nature of roots for the equation {a}x^2 + {b}x + {c} = 0.",
+  "variables": {
+    "a": "random.randint(1, 10)",
+    "b": "random.randint(-10, 10)",
+    "c": "random.randint(1, 10)"
+  },
+  "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+}

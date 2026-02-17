@@ -1,0 +1,220 @@
+[
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_001",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Algebraic Solution",
+    "difficulty": "Easy",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_002",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Elimination Method",
+    "difficulty": "Medium",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_003",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Substitution Method",
+    "difficulty": "Hard",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_004",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_005",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Algebraic Solution",
+    "difficulty": "Easy",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_006",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Elimination Method",
+    "difficulty": "Medium",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_007",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Substitution Method",
+    "difficulty": "Hard",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_008",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_009",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Algebraic Solution",
+    "difficulty": "Easy",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_010",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Elimination Method",
+    "difficulty": "Medium",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_011",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Substitution Method",
+    "difficulty": "Hard",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_012",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_013",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Algebraic Solution",
+    "difficulty": "Easy",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_014",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Elimination Method",
+    "difficulty": "Medium",
+    "template": "Find intersection for lines a1x + b1y = c1 and a2x + b2y = c2 where a1={a1}, b1={b1}, c1={c1}, a2={a2}, b2={b2}, c2={c2}.",
+    "variables": {
+      "a1": "random.randint(1, 8)",
+      "b1": "random.randint(1, 8)",
+      "c1": "random.randint(5, 40)",
+      "a2": "random.randint(1, 8)",
+      "b2": "random.randint(1, 8)",
+      "c2": "random.randint(5, 40)"
+    },
+    "solver_code": "d = a1*b2 - a2*b1; return 'No unique solution' if d == 0 else {'x': round((c1*b2 - c2*b1)/d, 3), 'y': round((a1*c2 - a2*c1)/d, 3)}"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_015",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Substitution Method",
+    "difficulty": "Hard",
+    "template": "A quantity increases from {base} to {new}. Find percentage increase.",
+    "variables": {
+      "base": "random.randint(20, 200)",
+      "new": "random.randint(201, 400)"
+    },
+    "solver_code": "return round(((new - base) / base) * 100, 2)"
+  },
+  {
+    "pattern_id": "cbse10_pair_of_linear_equations_016",
+    "chapter": "Pair of Linear Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Solve for x: {a}x + {b} = {c}.",
+    "variables": {
+      "a": "random.randint(1, 12)",
+      "b": "random.randint(-20, 20)",
+      "c": "random.randint(-20, 40)"
+    },
+    "solver_code": "return round((c - b) / a, 3)"
+  }
+]

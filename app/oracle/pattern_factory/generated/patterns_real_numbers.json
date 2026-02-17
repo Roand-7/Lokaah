@@ -1,0 +1,194 @@
+[
+  {
+    "pattern_id": "cbse10_real_numbers_001",
+    "chapter": "Real Numbers",
+    "topic": "Euclid Division Algorithm",
+    "difficulty": "Easy",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_002",
+    "chapter": "Real Numbers",
+    "topic": "HCF and LCM",
+    "difficulty": "Medium",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_003",
+    "chapter": "Real Numbers",
+    "topic": "Fundamental Theorem of Arithmetic",
+    "difficulty": "Hard",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_004",
+    "chapter": "Real Numbers",
+    "topic": "Terminating Decimal Expansion",
+    "difficulty": "Medium",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_005",
+    "chapter": "Real Numbers",
+    "topic": "Euclid Division Algorithm",
+    "difficulty": "Easy",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_006",
+    "chapter": "Real Numbers",
+    "topic": "HCF and LCM",
+    "difficulty": "Medium",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_007",
+    "chapter": "Real Numbers",
+    "topic": "Fundamental Theorem of Arithmetic",
+    "difficulty": "Hard",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_008",
+    "chapter": "Real Numbers",
+    "topic": "Terminating Decimal Expansion",
+    "difficulty": "Medium",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_009",
+    "chapter": "Real Numbers",
+    "topic": "Euclid Division Algorithm",
+    "difficulty": "Easy",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_010",
+    "chapter": "Real Numbers",
+    "topic": "HCF and LCM",
+    "difficulty": "Medium",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_011",
+    "chapter": "Real Numbers",
+    "topic": "Fundamental Theorem of Arithmetic",
+    "difficulty": "Hard",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_012",
+    "chapter": "Real Numbers",
+    "topic": "Terminating Decimal Expansion",
+    "difficulty": "Medium",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_013",
+    "chapter": "Real Numbers",
+    "topic": "Euclid Division Algorithm",
+    "difficulty": "Easy",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_014",
+    "chapter": "Real Numbers",
+    "topic": "HCF and LCM",
+    "difficulty": "Medium",
+    "template": "For numbers {a} and {b}, compute HCF and LCM.",
+    "variables": {
+      "a": "random.randint(24, 180)",
+      "b": "random.randint(18, 150)"
+    },
+    "solver_code": "h = math.gcd(a, b); l = (a*b)//h; return {'hcf': h, 'lcm': l}"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_015",
+    "chapter": "Real Numbers",
+    "topic": "Fundamental Theorem of Arithmetic",
+    "difficulty": "Hard",
+    "template": "Check whether {a} and {b} are coprime.",
+    "variables": {
+      "a": "random.randint(10, 120)",
+      "b": "random.randint(10, 120)"
+    },
+    "solver_code": "return 'Coprime' if math.gcd(a, b) == 1 else 'Not Coprime'"
+  },
+  {
+    "pattern_id": "cbse10_real_numbers_016",
+    "chapter": "Real Numbers",
+    "topic": "Terminating Decimal Expansion",
+    "difficulty": "Medium",
+    "template": "Use Euclid division algorithm to divide {a} by {b}. Find quotient and remainder.",
+    "variables": {
+      "a": "random.randint(60, 500)",
+      "b": "random.randint(2, 30)"
+    },
+    "solver_code": "q = a // b; r = a % b; return {'q': q, 'r': r}"
+  }
+]

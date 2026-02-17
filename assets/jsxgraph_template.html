@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LOKAAH Math Visualization</title>
+    
+    <!-- Responsive styling for mobile -->
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background: #ffffff; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        #jxgbox { 
+            width: 100vw; 
+            height: 100vh; 
+            touch-action: none; /* Prevent browser zooming */
+        }
+        .jxgbox { border: none; }
+        
+        /* Loading indicator */
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1000;
+        }
+        #loading.hidden { display: none; }
+        
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Error display */
+        #error {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #e74c3c;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            z-index: 1000;
+        }
+    </style>
+    
+    <!-- Primary: CDN | Fallback: Local (if downloaded) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" 
+          onerror="this.href='./jsxgraph.css'">
+    <script src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js" charset="UTF-8"
+            onerror="document.write('<script src=\"./jsxgraphcore.js\"><\/script>')"></script>
+            
+    <!-- MathJax for LaTeX rendering (optional but recommended) -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Loading graph...</p>
+    </div>
+    
+    <div id="error"></div>
+    
+    <div id="jxgbox" class="jxgbox"></div>
+    
+    <script>
+        // Global board reference for Flutter to access
+        var board = null;
+        var flutterChannel = null;
+        
+        // Initialize communication with Flutter
+        function initFlutterChannel() {
+            if (window.FlutterChannel) {
+                flutterChannel = window.FlutterChannel;
+                flutterChannel.postMessage('{"status": "ready"}');
+            }
+        }
+        
+        // Main initialization function called by Flutter with config
+        function initGraph(configJson) {
+            try {
+                const config = JSON.parse(configJson);
+                const { jsxCode, boundingBox, axis, grid, theme } = config;
+                
+                // Hide loading indicator
+                document.getElementById('loading').classList.add('hidden');
+                
+                // Clear previous board if exists
+                if (board) {
+                    JXG.JSXGraph.freeBoard(board);
+                }
+                
+                // Theme colors (matches LOKAAH design system)
+                const themes = {
+                    default: { stroke: '#2c3e50', fill: '#3498db', grid: '#ecf0f1', bg: '#ffffff' },
+                    success: { stroke: '#27ae60', fill: '#2ecc71', grid: '#e8f5e9', bg: '#f1f8f4' },
+                    warning: { stroke: '#f39c12', fill: '#f1c40f', grid: '#fff3e0', bg: '#fffbf0' },
+                    error:   { stroke: '#e74c3c', fill: '#e74c3c', grid: '#ffebee', bg: '#fef5f5' }
+                };
+                const t = themes[theme] || themes.default;
+                
+                // Initialize board with mobile-optimized settings
+                board = JXG.JSXGraph.initBoard('jxgbox', {
+                    boundingbox: boundingBox || [-10, 10, 10, -10],
+                    axis: axis !== false,
+                    grid: grid !== false,
+                    showCopyright: false,
+                    showNavigation: false,
+                    keepaspectratio: false,
+                    pan: { 
+                        enabled: true, 
+                        needTwoFingers: true  // Prevents accidental panning
+                    },
+                    zoom: { 
+                        factorX: 1.25, 
+                        factorY: 1.25, 
+                        wheel: true, 
+                        needShift: false,
+                        pinch: true  // Pinch zoom on mobile
+                    }
+                });
+                
+                // Customize appearance
+                board.containerObj.style.backgroundColor = t.bg;
+                
+                // Style axes with theme colors
+                if (board.defaultAxes && board.defaultAxes.x) {
+                    board.defaultAxes.x.setAttribute({ 
+                        strokeColor: t.stroke, 
+                        strokeWidth: 2,
+                        ticks: { 
+                            strokeColor: t.stroke, 
+                            majorHeight: 10 
+                        }
+                    });
+                }
+                if (board.defaultAxes && board.defaultAxes.y) {
+                    board.defaultAxes.y.setAttribute({ 
+                        strokeColor: t.stroke, 
+                        strokeWidth: 2,
+                        ticks: { 
+                            strokeColor: t.stroke, 
+                            majorHeight: 10 
+                        }
+                    });
+                }
+                
+                // Execute the AI-generated JSXGraph code safely
+                if (jsxCode && jsxCode.trim()) {
+                    // Wrap in function to avoid global scope pollution
+                    const userFunction = new Function('board', 'JXG', `
+                        "use strict";
+                        try {
+                            ${jsxCode}
+                            return { success: true };
+                        } catch (e) {
+                            return { success: false, error: e.message };
+                        }
+                    `);
+                    
+                    const result = userFunction(board, JXG);
+                    
+                    if (!result.success) {
+                        showError(result.error);
+                        sendError(result.error);
+                        return;
+                    }
+                }
+                
+                // Report successful initialization
+                sendMessage('initialized', { 
+                    boundingBox: boundingBox,
+                    objectCount: Object.keys(board.objects).length
+                });
+                
+                // Setup interaction handlers
+                setupInteractivity();
+                
+            } catch (error) {
+                showError('Init error: ' + error.message);
+                sendError('Init error: ' + error.message);
+            }
+        }
+        
+        // Handle student interactions (click, drag, etc.)
+        function setupInteractivity() {
+            if (!board) return;
+            
+            // Track when student moves a point (for "find the coordinate" questions)
+            board.on('move', function(evt) {
+                if (evt.element && evt.element.elType === 'point') {
+                    const coords = evt.element.coords.usrCoords;
+                    sendMessage('pointMoved', {
+                        name: evt.element.name || evt.element.id,
+                        x: parseFloat(coords[1].toFixed(2)),
+                        y: parseFloat(coords[2].toFixed(2))
+                    });
+                }
+            });
+            
+            // Track clicks for "identify the point" questions
+            board.on('up', function(evt) {
+                const coords = board.getUsrCoordsOfMouse(evt);
+                sendMessage('boardClicked', { 
+                    x: parseFloat(coords[0].toFixed(2)), 
+                    y: parseFloat(coords[1].toFixed(2)) 
+                });
+            });
+            
+            // Track when element is created (construction questions)
+            board.on('addElement', function(evt) {
+                if (evt.element) {
+                    sendMessage('elementAdded', {
+                        type: evt.element.elType,
+                        id: evt.element.id,
+                        name: evt.element.name
+                    });
+                }
+            });
+        }
+        
+        // Get current state (for answer verification)
+        function getGraphState() {
+            if (!board) return null;
+            
+            const state = {
+                objects: {},
+                timestamp: Date.now()
+            };
+            
+            // Extract positions of all interactive elements
+            for (const id in board.objects) {
+                const obj = board.objects[id];
+                
+                if (obj.elType === 'point' && !obj.fixed) {
+                    state.objects[obj.name || obj.id] = {
+                        type: 'point',
+                        x: parseFloat(obj.coords.usrCoords[1].toFixed(4)),
+                        y: parseFloat(obj.coords.usrCoords[2].toFixed(4)),
+                        visible: obj.visProp.visible
+                    };
+                } else if (obj.elType === 'line') {
+                    state.objects[obj.name || obj.id] = {
+                        type: 'line',
+                        point1: obj.point1 ? obj.point1.name || obj.point1.id : null,
+                        point2: obj.point2 ? obj.point2.name || obj.point2.id : null,
+                        visible: obj.visProp.visible
+                    };
+                } else if (obj.elType === 'circle') {
+                    state.objects[obj.name || obj.id] = {
+                        type: 'circle',
+                        center: obj.center ? [
+                            parseFloat(obj.center.coords.usrCoords[1].toFixed(4)),
+                            parseFloat(obj.center.coords.usrCoords[2].toFixed(4))
+                        ] : null,
+                        radius: parseFloat(obj.Radius().toFixed(4)),
+                        visible: obj.visProp.visible
+                    };
+                }
+            }
+            
+            return JSON.stringify(state);
+        }
+        
+        // Highlight element (for hints)
+        function highlightElement(elementId, color) {
+            if (!board || !board.objects[elementId]) return;
+            
+            const element = board.objects[elementId];
+            element.setAttribute({ 
+                strokeColor: color || '#f39c12',
+                strokeWidth: 3,
+                highlight: true
+            });
+            
+            // Flash animation
+            let count = 0;
+            const interval = setInterval(() => {
+                element.setAttribute({ 
+                    opacity: count % 2 === 0 ? 1.0 : 0.5 
+                });
+                count++;
+                if (count > 6) {
+                    clearInterval(interval);
+                    element.setAttribute({ opacity: 1.0 });
+                }
+            }, 300);
+        }
+        
+        // Add annotation (for VEDA hints)
+        function addAnnotation(x, y, text, color) {
+            if (!board) return;
+            
+            const annotation = board.create('text', [x, y, text], {
+                fontSize: 14,
+                strokeColor: color || '#e74c3c',
+                fixed: true,
+                highlight: false
+            });
+            
+            // Auto-remove after 5 seconds
+            setTimeout(() => {
+                board.removeObject(annotation);
+            }, 5000);
+        }
+        
+        // Helper: Send message to Flutter
+        function sendMessage(type, data) {
+            if (flutterChannel) {
+                flutterChannel.postMessage(JSON.stringify({
+                    type: type,
+                    data: data,
+                    timestamp: Date.now()
+                }));
+            }
+        }
+        
+        function sendError(message) {
+            sendMessage('error', { message: message });
+        }
+        
+        function showError(message) {
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
+        
+        // Resize handler for responsive design
+        window.addEventListener('resize', function() {
+            if (board) {
+                board.resizeContainer(window.innerWidth, window.innerHeight);
+                board.update();
+            }
+        });
+        
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            initFlutterChannel();
+            // Trigger ready event after DOM load
+            setTimeout(() => {
+                sendMessage('domReady', { width: window.innerWidth, height: window.innerHeight });
+            }, 100);
+        });
+        
+        // Error handler for uncaught errors
+        window.addEventListener('error', function(evt) {
+            showError('JavaScript Error: ' + evt.message);
+            sendError('JavaScript Error: ' + evt.message);
+        });
+    </script>
+</body>
+</html>

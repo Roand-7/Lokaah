@@ -1,0 +1,188 @@
+[
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_001",
+    "chapter": "Areas Related to Circles",
+    "topic": "Sector Area",
+    "difficulty": "Easy",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_002",
+    "chapter": "Areas Related to Circles",
+    "topic": "Arc Length",
+    "difficulty": "Medium",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_003",
+    "chapter": "Areas Related to Circles",
+    "topic": "Segment Area",
+    "difficulty": "Hard",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_004",
+    "chapter": "Areas Related to Circles",
+    "topic": "Combined Figures",
+    "difficulty": "Medium",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_005",
+    "chapter": "Areas Related to Circles",
+    "topic": "Sector Area",
+    "difficulty": "Easy",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_006",
+    "chapter": "Areas Related to Circles",
+    "topic": "Arc Length",
+    "difficulty": "Medium",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_007",
+    "chapter": "Areas Related to Circles",
+    "topic": "Segment Area",
+    "difficulty": "Hard",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_008",
+    "chapter": "Areas Related to Circles",
+    "topic": "Combined Figures",
+    "difficulty": "Medium",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_009",
+    "chapter": "Areas Related to Circles",
+    "topic": "Sector Area",
+    "difficulty": "Easy",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_010",
+    "chapter": "Areas Related to Circles",
+    "topic": "Arc Length",
+    "difficulty": "Medium",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_011",
+    "chapter": "Areas Related to Circles",
+    "topic": "Segment Area",
+    "difficulty": "Hard",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_012",
+    "chapter": "Areas Related to Circles",
+    "topic": "Combined Figures",
+    "difficulty": "Medium",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_013",
+    "chapter": "Areas Related to Circles",
+    "topic": "Sector Area",
+    "difficulty": "Easy",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_014",
+    "chapter": "Areas Related to Circles",
+    "topic": "Arc Length",
+    "difficulty": "Medium",
+    "template": "From external point at distance {d} cm from center, radius is {r} cm. Find tangent length.",
+    "variables": {
+      "d": "random.randint(10, 40)",
+      "r": "random.randint(2, 9)"
+    },
+    "solver_code": "return round(math.sqrt((d**2) - (r**2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_015",
+    "chapter": "Areas Related to Circles",
+    "topic": "Segment Area",
+    "difficulty": "Hard",
+    "template": "A chord subtends central angle {theta} deg in circle radius {r} cm. Find chord length.",
+    "variables": {
+      "theta": "random.choice([30, 45, 60, 90, 120])",
+      "r": "random.randint(3, 20)"
+    },
+    "solver_code": "return round(2*r*math.sin(math.radians(theta/2)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_areas_related_to_circles_016",
+    "chapter": "Areas Related to Circles",
+    "topic": "Combined Figures",
+    "difficulty": "Medium",
+    "template": "Find circumference and area of a circle with radius {r} cm.",
+    "variables": {
+      "r": "random.randint(2, 25)"
+    },
+    "solver_code": "return {'circumference': round(2*math.pi*r, 3), 'area': round(math.pi*(r**2), 3)}"
+  }
+]

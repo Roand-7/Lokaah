@@ -1,0 +1,189 @@
+[
+  {
+    "pattern_id": "cbse10_trigonometry_001",
+    "chapter": "Trigonometry",
+    "topic": "Trigonometric Ratios",
+    "difficulty": "Easy",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_002",
+    "chapter": "Trigonometry",
+    "topic": "Values at Standard Angles",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_003",
+    "chapter": "Trigonometry",
+    "topic": "Identities",
+    "difficulty": "Hard",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_004",
+    "chapter": "Trigonometry",
+    "topic": "Complementary Angles",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_005",
+    "chapter": "Trigonometry",
+    "topic": "Trigonometric Ratios",
+    "difficulty": "Easy",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_006",
+    "chapter": "Trigonometry",
+    "topic": "Values at Standard Angles",
+    "difficulty": "Medium",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_007",
+    "chapter": "Trigonometry",
+    "topic": "Identities",
+    "difficulty": "Hard",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_008",
+    "chapter": "Trigonometry",
+    "topic": "Complementary Angles",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_009",
+    "chapter": "Trigonometry",
+    "topic": "Trigonometric Ratios",
+    "difficulty": "Easy",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_010",
+    "chapter": "Trigonometry",
+    "topic": "Values at Standard Angles",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_011",
+    "chapter": "Trigonometry",
+    "topic": "Identities",
+    "difficulty": "Hard",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_012",
+    "chapter": "Trigonometry",
+    "topic": "Complementary Angles",
+    "difficulty": "Medium",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_013",
+    "chapter": "Trigonometry",
+    "topic": "Trigonometric Ratios",
+    "difficulty": "Easy",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_014",
+    "chapter": "Trigonometry",
+    "topic": "Values at Standard Angles",
+    "difficulty": "Medium",
+    "template": "A tower of height {height} m is observed at angle {angle} deg. Find horizontal distance.",
+    "variables": {
+      "height": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(height / math.tan(math.radians(angle)), 3)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_015",
+    "chapter": "Trigonometry",
+    "topic": "Identities",
+    "difficulty": "Hard",
+    "template": "Compute sin^2(theta)+cos^2(theta) for theta={angle} deg.",
+    "variables": {
+      "angle": "random.choice([0, 30, 45, 60, 90])"
+    },
+    "solver_code": "t = math.radians(angle); return round((math.sin(t)**2) + (math.cos(t)**2), 6)"
+  },
+  {
+    "pattern_id": "cbse10_trigonometry_016",
+    "chapter": "Trigonometry",
+    "topic": "Complementary Angles",
+    "difficulty": "Medium",
+    "template": "An object is {distance} m away from a building and angle of elevation is {angle} deg. Find height.",
+    "variables": {
+      "distance": "random.randint(10, 80)",
+      "angle": "random.choice([30, 45, 60])"
+    },
+    "solver_code": "return round(distance * math.tan(math.radians(angle)), 3)"
+  }
+]

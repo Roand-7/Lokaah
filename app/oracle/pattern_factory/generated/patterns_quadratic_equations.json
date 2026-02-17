@@ -1,0 +1,205 @@
+[
+  {
+    "pattern_id": "cbse10_quadratic_equations_001",
+    "chapter": "Quadratic Equations",
+    "topic": "Nature of Roots",
+    "difficulty": "Easy",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_002",
+    "chapter": "Quadratic Equations",
+    "topic": "Quadratic Formula",
+    "difficulty": "Medium",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_003",
+    "chapter": "Quadratic Equations",
+    "topic": "Factorization Method",
+    "difficulty": "Hard",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_004",
+    "chapter": "Quadratic Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_005",
+    "chapter": "Quadratic Equations",
+    "topic": "Nature of Roots",
+    "difficulty": "Easy",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_006",
+    "chapter": "Quadratic Equations",
+    "topic": "Quadratic Formula",
+    "difficulty": "Medium",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_007",
+    "chapter": "Quadratic Equations",
+    "topic": "Factorization Method",
+    "difficulty": "Hard",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_008",
+    "chapter": "Quadratic Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_009",
+    "chapter": "Quadratic Equations",
+    "topic": "Nature of Roots",
+    "difficulty": "Easy",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_010",
+    "chapter": "Quadratic Equations",
+    "topic": "Quadratic Formula",
+    "difficulty": "Medium",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_011",
+    "chapter": "Quadratic Equations",
+    "topic": "Factorization Method",
+    "difficulty": "Hard",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_012",
+    "chapter": "Quadratic Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_013",
+    "chapter": "Quadratic Equations",
+    "topic": "Nature of Roots",
+    "difficulty": "Easy",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_014",
+    "chapter": "Quadratic Equations",
+    "topic": "Quadratic Formula",
+    "difficulty": "Medium",
+    "template": "Solve quadratic equation {a}x^2 + {b}x + {c} = 0 using formula.",
+    "variables": {
+      "a": "random.randint(1, 6)",
+      "b": "random.randint(-12, 12)",
+      "c": "random.randint(-12, 12)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'No Real Roots' if D < 0 else {'x1': round((-b + math.sqrt(D))/(2*a), 3), 'x2': round((-b - math.sqrt(D))/(2*a), 3)}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_015",
+    "chapter": "Quadratic Equations",
+    "topic": "Factorization Method",
+    "difficulty": "Hard",
+    "template": "For equation x^2 - ({sum_roots})x + ({product_roots}) = 0, identify sum and product of roots.",
+    "variables": {
+      "sum_roots": "random.randint(-20, 20)",
+      "product_roots": "random.randint(-30, 30)"
+    },
+    "solver_code": "return {'sum': sum_roots, 'product': product_roots}"
+  },
+  {
+    "pattern_id": "cbse10_quadratic_equations_016",
+    "chapter": "Quadratic Equations",
+    "topic": "Word Problems",
+    "difficulty": "Medium",
+    "template": "Find the nature of roots for equation {a}x^2 + {b}x + {c} = 0.",
+    "variables": {
+      "a": "random.randint(1, 8)",
+      "b": "random.randint(-15, 15)",
+      "c": "random.randint(-10, 10)"
+    },
+    "solver_code": "D = b**2 - 4*a*c; return 'Real & Distinct' if D > 0 else ('Real & Equal' if D == 0 else 'No Real Roots')"
+  }
+]

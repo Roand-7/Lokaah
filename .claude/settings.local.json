@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(.venv/Scripts/python.exe:*)",
+      "Bash(netstat:*)",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)",
+      "Bash(tasklist:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:ncert.nic.in)",
+      "WebFetch(domain:edustud.nic.in)",
+      "WebFetch(domain:cbseacademic.nic.in)",
+      "Bash(for i in {1..35})",
+      "Bash(do curl -s -X POST http://localhost:8000/api/v1/chat -H \"Content-Type: application/json\" -d @test_chat.json)",
+      "Bash(echo:*)",
+      "Bash(break)",
+      "Bash(done)",
+      "Bash(git add:*)"
+    ]
+  }
+}

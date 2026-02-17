@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-02-15T12:41:15.267323+00:00",
+  "chapters": 15,
+  "patterns_per_chapter": 16,
+  "total_patterns": 240,
+  "ai_generated": 0,
+  "fallback_generated": 240,
+  "output_dir": "app\\oracle\\pattern_factory\\generated",
+  "generation_mode": "fallback-only"
+}

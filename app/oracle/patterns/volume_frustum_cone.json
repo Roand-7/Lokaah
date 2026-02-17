@@ -1,0 +1,47 @@
+{
+  "pattern_id": "volume_frustum_cone",
+  "topic": "Surface Areas and Volumes",
+  "marks": 5,
+  "difficulty": 0.7,
+  "template_text": "Question for volume frustum cone (to be enhanced)",
+  "variables": {
+    "x": {
+      "type": "int",
+      "min": 1,
+      "max": 100
+    },
+    "y": {
+      "type": "int",
+      "min": 1,
+      "max": 100
+    }
+  },
+  "solution_template": [
+    "Step 1: Identify the given information",
+    "Step 2: Apply the relevant formula or concept",
+    "Step 3: Calculate the result",
+    "Step 4: State the final answer"
+  ],
+  "answer_template": "{result}",
+  "validation_rules": [],
+  "socratic_hints": [
+    {
+      "level": 1,
+      "hint": "What concept is being tested here?",
+      "nudge": "Think about the topic and relevant formulas"
+    },
+    {
+      "level": 2,
+      "hint": "How do you set up the problem?",
+      "nudge": "Identify what is given and what needs to be found"
+    },
+    {
+      "level": 3,
+      "hint": "What formula or method applies?",
+      "nudge": "Use the standard approach for this topic"
+    }
+  ],
+  "created_at": "2026-02-16T22:04:59.918747",
+  "updated_at": "2026-02-16T22:04:59.918756",
+  "_note": "This is a minimal template. Enhance with specific question text, variables, and solution steps."
+}

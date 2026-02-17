@@ -1,0 +1,194 @@
+[
+  {
+    "pattern_id": "cbse10_statistics_001",
+    "chapter": "Statistics",
+    "topic": "Mean from Frequency Table",
+    "difficulty": "Easy",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_002",
+    "chapter": "Statistics",
+    "topic": "Median of Grouped Data",
+    "difficulty": "Medium",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_003",
+    "chapter": "Statistics",
+    "topic": "Mode of Grouped Data",
+    "difficulty": "Hard",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_004",
+    "chapter": "Statistics",
+    "topic": "Cumulative Frequency",
+    "difficulty": "Medium",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_005",
+    "chapter": "Statistics",
+    "topic": "Mean from Frequency Table",
+    "difficulty": "Easy",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_006",
+    "chapter": "Statistics",
+    "topic": "Median of Grouped Data",
+    "difficulty": "Medium",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_007",
+    "chapter": "Statistics",
+    "topic": "Mode of Grouped Data",
+    "difficulty": "Hard",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_008",
+    "chapter": "Statistics",
+    "topic": "Cumulative Frequency",
+    "difficulty": "Medium",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_009",
+    "chapter": "Statistics",
+    "topic": "Mean from Frequency Table",
+    "difficulty": "Easy",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_010",
+    "chapter": "Statistics",
+    "topic": "Median of Grouped Data",
+    "difficulty": "Medium",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_011",
+    "chapter": "Statistics",
+    "topic": "Mode of Grouped Data",
+    "difficulty": "Hard",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_012",
+    "chapter": "Statistics",
+    "topic": "Cumulative Frequency",
+    "difficulty": "Medium",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_013",
+    "chapter": "Statistics",
+    "topic": "Mean from Frequency Table",
+    "difficulty": "Easy",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_014",
+    "chapter": "Statistics",
+    "topic": "Median of Grouped Data",
+    "difficulty": "Medium",
+    "template": "Class mark is midpoint of class {l}-{u}. Find class mark.",
+    "variables": {
+      "l": "random.randint(0, 70)",
+      "u": "random.randint(71, 150)"
+    },
+    "solver_code": "return (l + u) / 2"
+  },
+  {
+    "pattern_id": "cbse10_statistics_015",
+    "chapter": "Statistics",
+    "topic": "Mode of Grouped Data",
+    "difficulty": "Hard",
+    "template": "In grouped data, estimated total is {total} and frequency sum is {freq}. Find mean.",
+    "variables": {
+      "total": "random.randint(300, 2500)",
+      "freq": "random.randint(10, 80)"
+    },
+    "solver_code": "return round(total / freq, 3)"
+  },
+  {
+    "pattern_id": "cbse10_statistics_016",
+    "chapter": "Statistics",
+    "topic": "Cumulative Frequency",
+    "difficulty": "Medium",
+    "template": "For total sum {sum_x} and number of observations {n}, find mean.",
+    "variables": {
+      "sum_x": "random.randint(120, 1500)",
+      "n": "random.randint(8, 50)"
+    },
+    "solver_code": "return round(sum_x / n, 3)"
+  }
+]
